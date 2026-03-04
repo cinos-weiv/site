@@ -1,7 +1,6 @@
 {
-  "builds": [{ "src": "app.js", "use": "@now/node" }],
-  "routes": [
-    {
-      "src": "/",
-      "dest": "/site/build/get-started.html"}]
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "redirects": [
+    { "source": "/get-started", "destination": "/get-started.html", "permanent": false }
+  ]
 }
