@@ -1,0 +1,1728 @@
+<!DOCTYPE html>
+<!-- saved from url=(0117)/en/foundations/design-tokens/alias-token-naming-and-usage/border.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    
+            
+    <!-- Meta information -->
+    <meta name="robots" content="noindex">
+    
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
+    <link href="/image/logo.png" rel="icon">
+    
+    <!-- Primary Meta Tags -->
+    <title>Border | Alias token naming &amp; usage | ViewSonic Design System</title>
+    <meta name="title" content="Border | Alias token naming &amp; usage | ViewSonic Design System">
+    <meta name="description" content="A clear and consistent naming convention ensures that design semantics are accurately communicated across teams and themes. | ViewSonic Design System">
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="/latest/foundations/design-tokens/alias-token-naming-and-usage/border-ezBtnEOD-ezBtnEOD">
+    <meta property="og:title" content="Border | Alias token naming &amp; usage | ViewSonic Design System">
+    <meta property="og:description" content="A clear and consistent naming convention ensures that design semantics are accurately communicated across teams and themes. | ViewSonic Design System">
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary">
+    <meta property="twitter:url" content="/latest/foundations/design-tokens/alias-token-naming-and-usage/border-ezBtnEOD-ezBtnEOD">
+    <meta property="twitter:title" content="Border | Alias token naming &amp; usage | ViewSonic Design System">
+    <meta property="twitter:description" content="A clear and consistent naming convention ensures that design semantics are accurately communicated across teams and themes. | ViewSonic Design System">
+    
+    
+    
+    <!-- Fonts -->
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <link href="./border_files/css2" rel="stylesheet">
+    
+    
+    <link href="./border_files/css2(1)" rel="stylesheet">
+    
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="./border_files/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" type="text/css" href="./border_files/docs.min.css">
+    <link rel="stylesheet" type="text/css" href="./border_files/custom.css">
+    
+    <script src="./border_files/codemirror.min.js" integrity="sha512-3S64QagKiTlNjSfuh3UYtYSkP494WHoWc96YvbmB2BReHpNtxlrMNY6MbJLDpavcgD8Pj5p44F/PY586uVO5iA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./border_files/javascript.min.js" integrity="sha512-I6CdJdruzGtvDyvdO4YsiAq+pkWf2efgd1ZUSK2FnM/u2VuRASPC7GowWQrWyjxCZn6CT89s3ddGI+be0Ak9Fg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./border_files/xml.min.js" integrity="sha512-LarNmzVokUmcA7aUDtqZ6oTS+YXmUKzpGdm8DxC46A6AHu+PQiYCUlwEGWidjVYMo/QXZMFMIadZtrkfApYp/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./border_files/jsx.min.js" integrity="sha512-+0Bk5jqcZFYMi5WaRZaTboF7s25sht/1pxmg3sXqWDeidrrw1yRqDzF25jsMOnToR8iXSqzrHfAD5wiDO1lwSA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="./border_files/codemirror.min.css" integrity="sha512-uf06llspW44/LZpHzHT6qBOIVODjWtv4MxCricRxkzvopAlSWnTf6hpZTFxuuZcuNE9CBQhqE0Seu1CoRk84nQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    
+    <!-- Asset download -->
+    <script src="./border_files/jszip.min.js" integrity="sha512-xQBQYt9UcgblF6aCMrwU1NkVA7HCXaSN2oq0so80KO+y68M+n64FOcqgav4igHe6D5ObBLIf68DWv+gfBowczg==" crossorigin="anonymous"></script>
+    <script src="./border_files/FileSaver.min.js" integrity="sha512-Qlv6VSKh1gDKGoJbnyA5RMXYcvnpIqhO++MhIM2fStMcGT9i2T//tSwYFlcyoRRDcDZ+TYHpH8azBBCyhpSeqw==" crossorigin="anonymous"></script>
+    
+    <!-- Supernova meta -->
+    <script>
+        if (!window.supernova) {
+            window.supernova = {};
+        }
+    
+        window.supernova.designSystem = {
+            id: '357248',
+            name: 'ViewSonic Design System',
+            description: '',
+        };
+        window.supernova.version = {
+            version: 'Shared Draft',
+            description: '',
+            versionName: 'Shared Draft',
+        };
+        window.supernova.page = {
+            title: 'Border',
+            persistendId: 'a4066955-5e3e-4ed8-8bd3-35db64da7c53',
+            shortPersistendId: 'ezBtnEOD',
+            lastPublished: 'Fri Oct 03 2025 05:34:42 GMT+0000 (Coordinated Universal Time)'
+        };
+    </script>
+    
+    
+    <script src="./border_files/storybook-playground-1.0.3.js"></script>
+   
+    
+    <script>
+/* 把 <h4> 改寫為 <checkbox> */
+document.addEventListener("DOMContentLoaded", function() {
+  const headings = document.querySelectorAll("h4");
+
+  headings.forEach((h4, index) => {
+    const checkboxId = "checkbox-" + (index + 1);
+
+    // 取出原本的子節點（保留結構）
+    const originalNodes = Array.from(h4.childNodes);
+
+    // 清空 h4，重新組結構
+    h4.textContent = "";
+
+    // 建立 checkbox
+    const checkbox = document.createElement("input");
+    checkbox.type = "checkbox";
+    checkbox.id = checkboxId;
+    checkbox.classList.add("vsbox");
+
+    // 建立 label
+    const label = document.createElement("label");
+    label.setAttribute("for", checkboxId);
+
+    // 把除了 <a> 和 <mark> 的節點放進 label
+    originalNodes.forEach(node => {
+      if (
+        node.nodeType === Node.ELEMENT_NODE &&
+        (node.tagName === "A" || node.tagName === "MARK")
+      ) {
+        // <a> 和 <mark> 直接放回 h4，不包進 label
+        h4.appendChild(node);
+      } else {
+        label.appendChild(node);
+      }
+    });
+
+    // 從 localStorage 讀取狀態
+    const savedState = localStorage.getItem(checkboxId);
+    if (savedState === "true") {
+      checkbox.checked = true;
+      h4.classList.add("vs-checked");
+    }
+
+    // checkbox 變化時更新
+    checkbox.addEventListener("change", function() {
+      localStorage.setItem(checkboxId, checkbox.checked);
+      h4.classList.toggle("vs-checked", checkbox.checked);
+    });
+
+    // 組合回去：checkbox → label → (可能的 a, mark)
+    h4.prepend(checkbox);
+    h4.insertBefore(label, checkbox.nextSibling);
+  });
+});
+</script>
+
+
+<script>
+/* Footer 裡塞英文網站連結 */
+document.addEventListener("DOMContentLoaded", () => {
+  const footer = document.querySelector(".container-footer.small p");
+  if (!footer) return;
+
+  const link = document.createElement("a");
+  link.href = "/zh-tw/get-started/get-started.html";
+  link.target = "_blank";
+  link.innerHTML = 'Foundation Site <b>zhTW</b>';
+
+  footer.appendChild(document.createTextNode(" "));
+  footer.appendChild(link);
+});
+</script>
+
+<style id="custom-cursor" type="text/css">body button, body [type='button'], body input[type='reset'], body input[type='submit'], body [role="button"], ::-webkit-search-cancel-button, ::-webkit-search-decoration, ::-webkit-scrollbar-button, ::-webkit-file-upload-button, [role^=button], .cc_pointer, [type="search"]::-webkit-search-cancel-button, a, select, [type="search"]::-webkit-search-decoration, .paper-button, .ytp-progress-bar-container, input[type=submit], :link, :visited, a > *, img,  ::-webkit-scrollbar-button, .ogdlpmhglpejoiomcodnpjnfgcpmgale_pointer, ::-webkit-file-upload-button, .ytp-volume-panel, #myogdlpmhglpejoiomcodnpjnfgcpmgale .icon, body .custom-cursor-on-hover {cursor: url("data:image/png;base64,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") 33 16, pointer !important;} html,body,body select,body .custom-cursor-default-hover {cursor: url("data:image/png;base64,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") 6 6, auto !important;}</style><link type="text/css" rel="stylesheet" href="./border_files/css"></head>
+
+<body class="page-body/foundations/design-tokens/alias-token-naming-and-usage/border-ezBtnEOD-ezBtnEOD">
+
+
+
+<div class="SNSearch SNSearch-container backdrop-blur">
+   <div class="SNSearch-box">
+      <header class="SNSearch-header">
+         <label class="SNSearch-input-label">
+            <span class="icon">
+                               <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                  <circle cx="10" cy="10" r="7"></circle>
+                                  <line x1="21" y1="21" x2="15" y2="15"></line>
+                               </svg>
+                               </span>
+         </label>
+         <form class="SNSearch-form">
+            <input class="SNSearch-input" id="SNSearch-input" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="Search documentation..." maxlength="64" enterkeyhint="go">
+         </form>
+         <button class="SNSearch-close search">
+            <span class="icon">
+                               <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                  <line x1="18" y1="6" x2="6" y2="18"></line>
+                                  <line x1="6" y1="6" x2="18" y2="18"></line>
+                               </svg>
+                               </span>
+         </button>
+      </header>
+      <div class="SNSearch-results">
+        
+      </div>
+      <footer class="SNSearch-footer">
+         <div class="info">
+            <span>Cmd</span>/<span>Ctrl</span> + <span>K</span> to search
+         </div>
+         <div class="info">
+            <span>ESC</span> to clear / exit
+         </div>
+      </footer>
+   </div>
+</div>
+<!-- Document Wrapper -->
+<div id="main-wrapper"> 
+  
+  <!-- Content -->
+  <div id="content" class="site-wrapper hidden-top-nav">
+  
+    
+      
+      <header id="header" class="mobile-header sticky-top style-dark">    
+          <!-- Navbar -->
+          <nav class="primary-menu navbar navbar-expand-lg">
+                  <button id="sidebarCollapse" class="toggle-navbar" type="button" aria-label="Open navigation">
+                      
+                      <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                         <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                         <line x1="4" y1="6" x2="20" y2="6"></line>
+                         <line x1="4" y1="12" x2="20" y2="12"></line>
+                         <line x1="4" y1="18" x2="20" y2="18"></line>
+                      </svg>                  </button>
+          </nav>
+      </header>
+
+    <div class="site">
+      <div class="site-content-wrapper">
+        <div class="site-content">
+            <!-- Sidebar Navigation -->
+            <nav class="side-navigation-wrapper style-dark" id="side-navigation">
+              <div class="bg-sidebar"></div>
+              <div class="sidebar-navigation docs-navigation">            
+                    
+                
+                
+                    
+                
+                        <div class="site-logo-wrapper">
+                            
+                            <!-- Logo -->
+                            <a href="/en/get-started/get-started.html" class="site-logo" aria-label="ViewSonic Design System">
+                                
+                                    <img src="./border_files/d26c93de-c70d-4300-8538-9e8b1c384a8c.svg" alt="ViewSonic Design System">
+                            </a>
+                            <button class="btn-icon-button btn-search search expanded">
+                                <div class="icon">
+                                                  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                                     <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                                     <circle cx="10" cy="10" r="7"></circle>
+                                                     <line x1="21" y1="21" x2="15" y2="15"></line>
+                                                  </svg>
+                                                  </div>
+                                <div class="label">Search</div>
+                            </button>
+                        </div>
+                 
+                
+                    <ul class="nav with-root-level">
+                            
+                                
+                                    <li class="nav-item">
+                                    
+                                        <a class="nav-link group" href="/en/get-started/get-started.html">
+                                            <span>
+                                                Get started
+                                            </span>
+                <span class="icon">
+                                                               <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                                                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                                                  <polyline points="9 6 15 12 9 18"></polyline>
+                                                               </svg>
+                                                               </span>                        </a>
+                                    </li>
+                            
+                                
+                                    <li class="nav-item">
+                                    
+                                        <a class="nav-link group active" href="/en/foundations/accessibility/accessibility.html">
+                                            <span>
+                                                Foundations
+                                            </span>
+                <span class="icon">
+                                                               <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                                                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                                                  <polyline points="9 6 15 12 9 18"></polyline>
+                                                               </svg>
+                                                               </span>                        </a>
+                                                                                                            
+                                                                                                        
+                                                                                                        
+                                                                                                            
+                                                                                                        
+                                                                                                         
+                                                                                                        
+                                                                                                            <ul class="nav with-root-level">
+                                                                                                                    
+                                                                                                                        
+                                                                                                                            <li class="nav-item">
+                                                                                                                            
+                                                                                                                                <a class="nav-link group" href="/en/foundations/accessibility/accessibility.html">
+                                                                                                                                    <span>
+                                                                                                                                        Accessibility
+                                                                                                                                    </span>
+                                                                                                        <span class="icon">
+                                                                                                                                                       <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                                                                                                                                          <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                                                                                                                                          <polyline points="9 6 15 12 9 18"></polyline>
+                                                                                                                                                       </svg>
+                                                                                                                                                       </span>                        </a>
+                                                                                                                            </li>
+                                                                                                                    
+                                                                                                                        
+                                                                                                                            <li class="nav-item">
+                                                                                                                            
+                                                                                                                                <a class="nav-link group active" href="/en/foundations/design-tokens/design-tokens.html">
+                                                                                                                                    <span>
+                                                                                                                                        Design tokens
+                                                                                                                                    </span>
+                                                                                                        <span class="icon">
+                                                                                                                                                       <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                                                                                                                                          <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                                                                                                                                          <polyline points="9 6 15 12 9 18"></polyline>
+                                                                                                                                                       </svg>
+                                                                                                                                                       </span>                        </a>
+                                                                                                                                                                                                    
+                                                                                                                                                                                                
+                                                                                                                                                                                                
+                                                                                                                                                                                                    
+                                                                                                                                                                                                
+                                                                                                                                                                                                 
+                                                                                                                                                                                                
+                                                                                                                                                                                                    <ul class="nav with-root-level">
+                                                                                                                                                                                                            
+                                                                                                                                                                                                                
+                                                                                                                                                                                                                    <li class="nav-item">
+                                                                                                                                                                                                                        <a class="nav-link" href="/en/foundations/design-tokens/design-tokens.html">
+                                                                                                                                                                                                                            <span>
+                                                                                                                                                                                                                                Design tokens
+                                                                                                                                                                                                                            </span>
+                                                                                                                                                                                                                        </a>
+                                                                                                                                                                                                                    </li>
+                                                                                                                                                                                                            
+                                                                                                                                                                                                                
+                                                                                                                                                                                                                    <li class="nav-item">
+                                                                                                                                                                                                                        <a class="nav-link" href="/en/foundations/design-tokens/foundation-tokens.html">
+                                                                                                                                                                                                                            <span>
+                                                                                                                                                                                                                                Foundation tokens
+                                                                                                                                                                                                                            </span>
+                                                                                                                                                                                                                        </a>
+                                                                                                                                                                                                                    </li>
+                                                                                                                                                                                                            
+                                                                                                                                                                                                                
+                                                                                                                                                                                                                    <li class="nav-item">
+                                                                                                                                                                                                                    
+                                                                                                                                                                                                                        <a class="nav-link group" href="/en/foundations/design-tokens/foundation-tokens-index/color.html">
+                                                                                                                                                                                                                            <span>
+                                                                                                                                                                                                                                Foundation tokens index
+                                                                                                                                                                                                                            </span>
+                                                                                                                                                                                                <span class="icon">
+                                                                                                                                                                                                                                               <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                                                                                                                                                                                                                                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                                                                                                                                                                                                                                  <polyline points="9 6 15 12 9 18"></polyline>
+                                                                                                                                                                                                                                               </svg>
+                                                                                                                                                                                                                                               </span>                        </a>
+                                                                                                                                                                                                                    </li>
+                                                                                                                                                                                                            
+                                                                                                                                                                                                                
+                                                                                                                                                                                                                    <li class="nav-item">
+                                                                                                                                                                                                                        <a class="nav-link" href="/en/foundations/design-tokens/alias-tokens.html">
+                                                                                                                                                                                                                            <span>
+                                                                                                                                                                                                                                Alias tokens
+                                                                                                                                                                                                                            </span>
+                                                                                                                                                                                                                        </a>
+                                                                                                                                                                                                                    </li>
+                                                                                                                                                                                                            
+                                                                                                                                                                                                                
+                                                                                                                                                                                                                    <li class="nav-item">
+                                                                                                                                                                                                                    
+                                                                                                                                                                                                                        <a class="nav-link group active" href="/en/foundations/design-tokens/alias-token-naming-and-usage/overview.html">
+                                                                                                                                                                                                                            <span>
+                                                                                                                                                                                                                                Alias token naming &amp; usage
+                                                                                                                                                                                                                            </span>
+                                                                                                                                                                                                <span class="icon">
+                                                                                                                                                                                                                                               <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                                                                                                                                                                                                                                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                                                                                                                                                                                                                                  <polyline points="9 6 15 12 9 18"></polyline>
+                                                                                                                                                                                                                                               </svg>
+                                                                                                                                                                                                                                               </span>                        </a>
+                                                                                                                                                                                                                                                                                            
+                                                                                                                                                                                                                                                                                        
+                                                                                                                                                                                                                                                                                        
+                                                                                                                                                                                                                                                                                            
+                                                                                                                                                                                                                                                                                        
+                                                                                                                                                                                                                                                                                         
+                                                                                                                                                                                                                                                                                        
+                                                                                                                                                                                                                                                                                            <ul class="nav with-root-level">
+                                                                                                                                                                                                                                                                                                    
+                                                                                                                                                                                                                                                                                                        
+                                                                                                                                                                                                                                                                                                            <li class="nav-item is-tab">
+                                                                                                                                                                                                                                                                                                                <a class="nav-link" href="/en/foundations/design-tokens/alias-token-naming-and-usage/overview.html">
+                                                                                                                                                                                                                                                                                                                    <span>
+                                                                                                                                                                                                                                                                                                                        Overview
+                                                                                                                                                                                                                                                                                                                    </span>
+                                                                                                                                                                                                                                                                                                                </a>
+                                                                                                                                                                                                                                                                                                            </li>
+                                                                                                                                                                                                                                                                                                    
+                                                                                                                                                                                                                                                                                                        
+                                                                                                                                                                                                                                                                                                            <li class="nav-item is-tab">
+                                                                                                                                                                                                                                                                                                                <a class="nav-link" href="/en/foundations/design-tokens/alias-token-naming-and-usage/color.html">
+                                                                                                                                                                                                                                                                                                                    <span>
+                                                                                                                                                                                                                                                                                                                        Color
+                                                                                                                                                                                                                                                                                                                    </span>
+                                                                                                                                                                                                                                                                                                                </a>
+                                                                                                                                                                                                                                                                                                            </li>
+                                                                                                                                                                                                                                                                                                    
+                                                                                                                                                                                                                                                                                                        
+                                                                                                                                                                                                                                                                                                            <li class="nav-item is-tab">
+                                                                                                                                                                                                                                                                                                                <a class="nav-link" href="/en/foundations/design-tokens/alias-token-naming-and-usage/blur.html">
+                                                                                                                                                                                                                                                                                                                    <span>
+                                                                                                                                                                                                                                                                                                                        Blur
+                                                                                                                                                                                                                                                                                                                    </span>
+                                                                                                                                                                                                                                                                                                                </a>
+                                                                                                                                                                                                                                                                                                            </li>
+                                                                                                                                                                                                                                                                                                    
+                                                                                                                                                                                                                                                                                                        
+                                                                                                                                                                                                                                                                                                            <li class="nav-item is-tab">
+                                                                                                                                                                                                                                                                                                                <a class="nav-link active" href="/en/foundations/design-tokens/alias-token-naming-and-usage/border.html">
+                                                                                                                                                                                                                                                                                                                    <span>
+                                                                                                                                                                                                                                                                                                                        Border
+                                                                                                                                                                                                                                                                                                                    </span>
+                                                                                                                                                                                                                                                                                                                </a>
+                                                                                                                                                                                                                                                                                                            </li>
+                                                                                                                                                                                                                                                                                                    
+                                                                                                                                                                                                                                                                                                        
+                                                                                                                                                                                                                                                                                                            <li class="nav-item is-tab">
+                                                                                                                                                                                                                                                                                                                <a class="nav-link" href="/en/foundations/design-tokens/alias-token-naming-and-usage/breakpoint.html">
+                                                                                                                                                                                                                                                                                                                    <span>
+                                                                                                                                                                                                                                                                                                                        Breakpoint
+                                                                                                                                                                                                                                                                                                                    </span>
+                                                                                                                                                                                                                                                                                                                </a>
+                                                                                                                                                                                                                                                                                                            </li>
+                                                                                                                                                                                                                                                                                                    
+                                                                                                                                                                                                                                                                                                        
+                                                                                                                                                                                                                                                                                                            <li class="nav-item is-tab">
+                                                                                                                                                                                                                                                                                                                <a class="nav-link" href="/en/foundations/design-tokens/alias-token-naming-and-usage/font.html">
+                                                                                                                                                                                                                                                                                                                    <span>
+                                                                                                                                                                                                                                                                                                                        Font
+                                                                                                                                                                                                                                                                                                                    </span>
+                                                                                                                                                                                                                                                                                                                </a>
+                                                                                                                                                                                                                                                                                                            </li>
+                                                                                                                                                                                                                                                                                                    
+                                                                                                                                                                                                                                                                                                        
+                                                                                                                                                                                                                                                                                                            <li class="nav-item is-tab">
+                                                                                                                                                                                                                                                                                                                <a class="nav-link" href="/en/foundations/design-tokens/alias-token-naming-and-usage/icon.html">
+                                                                                                                                                                                                                                                                                                                    <span>
+                                                                                                                                                                                                                                                                                                                        Icon
+                                                                                                                                                                                                                                                                                                                    </span>
+                                                                                                                                                                                                                                                                                                                </a>
+                                                                                                                                                                                                                                                                                                            </li>
+                                                                                                                                                                                                                                                                                                    
+                                                                                                                                                                                                                                                                                                        
+                                                                                                                                                                                                                                                                                                            <li class="nav-item is-tab">
+                                                                                                                                                                                                                                                                                                                <a class="nav-link" href="/en/foundations/design-tokens/alias-token-naming-and-usage/opacity.html">
+                                                                                                                                                                                                                                                                                                                    <span>
+                                                                                                                                                                                                                                                                                                                        Opacity
+                                                                                                                                                                                                                                                                                                                    </span>
+                                                                                                                                                                                                                                                                                                                </a>
+                                                                                                                                                                                                                                                                                                            </li>
+                                                                                                                                                                                                                                                                                                    
+                                                                                                                                                                                                                                                                                                        
+                                                                                                                                                                                                                                                                                                            <li class="nav-item is-tab">
+                                                                                                                                                                                                                                                                                                                <a class="nav-link" href="/en/foundations/design-tokens/alias-token-naming-and-usage/radius.html">
+                                                                                                                                                                                                                                                                                                                    <span>
+                                                                                                                                                                                                                                                                                                                        Radius
+                                                                                                                                                                                                                                                                                                                    </span>
+                                                                                                                                                                                                                                                                                                                </a>
+                                                                                                                                                                                                                                                                                                            </li>
+                                                                                                                                                                                                                                                                                                    
+                                                                                                                                                                                                                                                                                                        
+                                                                                                                                                                                                                                                                                                            <li class="nav-item is-tab">
+                                                                                                                                                                                                                                                                                                                <a class="nav-link" href="/en/foundations/design-tokens/alias-token-naming-and-usage/shadow.html">
+                                                                                                                                                                                                                                                                                                                    <span>
+                                                                                                                                                                                                                                                                                                                        Shadow
+                                                                                                                                                                                                                                                                                                                    </span>
+                                                                                                                                                                                                                                                                                                                </a>
+                                                                                                                                                                                                                                                                                                            </li>
+                                                                                                                                                                                                                                                                                                    
+                                                                                                                                                                                                                                                                                                        
+                                                                                                                                                                                                                                                                                                            <li class="nav-item is-tab">
+                                                                                                                                                                                                                                                                                                                <a class="nav-link" href="/en/foundations/design-tokens/alias-token-naming-and-usage/spacing.html">
+                                                                                                                                                                                                                                                                                                                    <span>
+                                                                                                                                                                                                                                                                                                                        Spacing
+                                                                                                                                                                                                                                                                                                                    </span>
+                                                                                                                                                                                                                                                                                                                </a>
+                                                                                                                                                                                                                                                                                                            </li>
+                                                                                                                                                                                                                                                                                            </ul>
+                                                                                                                                                                                                                                                                                                            </li>
+                                                                                                                                                                                                    </ul>
+                                                                                                                                                                                                                    </li>
+                                                                                                                    
+                                                                                                                        
+                                                                                                                            <li class="nav-item">
+                                                                                                                                <a class="nav-link" href="/en/foundations/themes.html">
+                                                                                                                                    <span>
+                                                                                                                                        Themes
+                                                                                                                                    </span>
+                                                                                                                                </a>
+                                                                                                                            </li>
+                                                                                                                    
+                                                                                                            </ul>
+                                                                                                                            </li>
+                            
+                                
+                                    <li class="nav-item">
+                                    
+                                        <a class="nav-link group" href="/en/styles/overview.html">
+                                            <span>
+                                                Styles
+                                            </span>
+                <span class="icon">
+                                                               <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                                                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                                                  <polyline points="9 6 15 12 9 18"></polyline>
+                                                               </svg>
+                                                               </span>                        </a>
+                                    </li>
+                            
+                                
+                                    <li class="nav-item">
+                                    
+                                        <a class="nav-link group" href="/en/components/design-kit.html">
+                                            <span>
+                                                Components
+                                            </span>
+                <span class="icon">
+                                                               <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                                                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                                                  <polyline points="9 6 15 12 9 18"></polyline>
+                                                               </svg>
+                                                               </span>                        </a>
+                                    </li>
+                            
+                            
+                    </ul>
+                              </div>
+              <script>
+                // Restore scroll position, `menu.scroll.position.top` is set in in functionality.js
+                const scrollPosition = localStorage.getItem('menu.scroll.position.top');
+                if (scrollPosition) {
+                   document.querySelector('.sidebar-navigation').scrollTop = scrollPosition;
+                }
+              </script>
+            </nav>
+          
+          <!-- Docs Content -->
+          <main class="docs-content">
+
+            
+            
+            
+            
+            
+            
+            
+            <div class="container-title" style="background: url(/image/background.jpg) no-repeat center center; background-size: cover;">
+            
+                <div class="slider">
+                    
+            
+                        
+                        <h1 class="page-title" style="">Alias token naming &amp; usage</h1>
+                        
+                            <p class="subtitle" style="">A clear and consistent naming convention ensures that design semantics are accurately communicated across teams and themes.</p>
+                </div>
+            </div>
+            
+            <style>
+             :root { --tabOffset: 40px; }
+            </style>
+            <div class="container-tabs">    
+                <div class="tabbed-navigation">
+                    <ul class="nav nav-tabs" id="page-tab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link " id="tab-21794734" href="/en/foundations/design-tokens/alias-token-naming-and-usage/overview.html" role="tab" aria-selected="false"><span>Overview</span></a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link " id="tab-21845936" href="/en/foundations/design-tokens/alias-token-naming-and-usage/color.html" role="tab" aria-selected="false"><span>Color</span></a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link " id="tab-21845943" href="/en/foundations/design-tokens/alias-token-naming-and-usage/blur.html" role="tab" aria-selected="false"><span>Blur</span></a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link active" id="tab-21845940" href="/en/foundations/design-tokens/alias-token-naming-and-usage/border.html" role="tab" aria-selected="true"><span>Border</span></a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link " id="tab-21845947" href="/en/foundations/design-tokens/alias-token-naming-and-usage/breakpoint.html" role="tab" aria-selected="false"><span>Breakpoint</span></a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link " id="tab-21845937" href="/en/foundations/design-tokens/alias-token-naming-and-usage/font.html" role="tab" aria-selected="false"><span>Font</span></a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link " id="tab-21845945" href="/en/foundations/design-tokens/alias-token-naming-and-usage/icon.html" role="tab" aria-selected="false"><span>Icon</span></a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link " id="tab-21845944" href="/en/foundations/design-tokens/alias-token-naming-and-usage/opacity.html" role="tab" aria-selected="false"><span>Opacity</span></a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link " id="tab-21845939" href="/en/foundations/design-tokens/alias-token-naming-and-usage/radius.html" role="tab" aria-selected="false"><span>Radius</span></a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link " id="tab-21845941" href="/en/foundations/design-tokens/alias-token-naming-and-usage/shadow.html" role="tab" aria-selected="false"><span>Shadow</span></a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link " id="tab-21845938" href="/en/foundations/design-tokens/alias-token-naming-and-usage/spacing.html" role="tab" aria-selected="false"><span>Spacing</span></a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+            
+            
+            <div class="content-container">
+              <section id="section-content-page">
+                <div class="tab-content" id="page-tab-content">
+
+                                    
+                                                
+                                                    <p id="search-b5e39050-3458-4e52-a2ee-1e1a7f576fef">
+                                                                 
+                                                                 
+                                                                 
+                                                                 
+                                                                 
+                                                                 
+                                                             
+                                                             The prefix <mark>vsds-sys-border-</mark> is used to define border thickness levels for components, commonly applied to input fields, cards, buttons, and other UI elements. Different thicknesses help structure the layout, separate sections, enhance interaction states, or indicate visual hierarchy.
+                                                             </p>
+                                                
+                                    
+                                    
+                                                                        
+                                            <ul class="content-block">
+                                                    <div class="anchor" id="search-714a6a22-f54f-470c-84ff-2eba42728045" aria-hidden="true"></div>
+                                                    <li>
+                                                            
+                                                            
+                                                        
+                                                        Borders are structural visual elements that clearly indicate component boundaries and convey block hierarchy and interaction states.
+                                                        </li>
+                                    
+                                    
+                                                                        
+                                                    <div class="anchor" id="search-714a6a22-f54f-470c-84ff-2eba42728045-1" aria-hidden="true"></div>
+                                                    <li>
+                                                            
+                                                            
+                                                            
+                                                            
+                                                            
+                                                            
+                                                            
+                                                            
+                                                            
+                                                            
+                                                        
+                                                        They are usually paired with color tokens like <mark>outline</mark> or <mark>focus-outline</mark> to improve contrast and recognizability.
+                                                        </li>
+                                    
+                                    
+                                                                        
+                                                    <div class="anchor" id="search-714a6a22-f54f-470c-84ff-2eba42728045-2" aria-hidden="true"></div>
+                                                    <li>
+                                                            
+                                                            
+                                                        
+                                                        It is recommended to choose an appropriate thickness based on UI context to avoid styles that are too thin or too thick, which can reduce visibility or disrupt overall rhythm.
+                                                        </li>
+                                    
+                                    
+                                                                        
+                                                    <div class="anchor" id="search-714a6a22-f54f-470c-84ff-2eba42728045-3" aria-hidden="true"></div>
+                                                    <li>
+                                                            
+                                                            
+                                                            
+                                                            
+                                                            
+                                                            
+                                                        
+                                                        To meet accessibility standards (e.g., a 3:1 contrast ratio for focus outlines), use at least <mark>foun-border-100</mark> or thicker, especially in dark backgrounds or high-density areas.
+                                                        </li>
+                                    
+                                    </ul>
+                                    
+                                                                        
+                                                                                                                                                                                                                                                                                    
+                                                                                                                                                                                                                                                                                    <div class="content-block content-block--guidelines layout-columns-2  variant-simple" id="search-e8aeb94b-bed7-46ee-a484-d9ffafb679ae">
+                                                                                                                                                                                                                                                                                          
+                                                                                                                                                                                                                                                                                               <div class="guideline-item guideline-item__type-do">
+                                                                                                                                                                                                                                                                                                  <div class="type-badge type-badge__full">
+                                                                                                                                                                                                                                                                                                      <span class="icon">
+                                                                                                                                                                                                                                                                                                                         <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                                                                                                                                                                                                                                                                                                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                                                                                                                                                                                                                                                                                                            <circle cx="12" cy="12" r="9"></circle>
+                                                                                                                                                                                                                                                                                                                            <path d="M9 12l2 2l4 -4"></path>
+                                                                                                                                                                                                                                                                                                                         </svg>
+                                                                                                                                                                                                                                                                                                                         </span>
+                                                                                                                                                                                                                                                                                                      <span class="label">Do</span>
+                                                                                                                                                                                                                                                                                                  </div>
+                                                                                                                                                                                                                                                                                                  <div class="image img-align-left">
+                                                                                                                                                                                                                                                                                                                  
+                                                                                                                                                                                                                                                                                                                  
+                                                                                                                                                                                                                                                                                                                      <img src="./border_files/63087c91-0fa9-4358-bf83-4afb5ad257b3.png" class="image-asset">
+                                                                                                                                                                                                                                                                                                                             
+                                                                                                                                                                                                                                                                                                  </div>
+                                                                                                                                                                                                                                                                                          
+                                                                                                                                                                                                                                                                                                  <div class="content">
+                                                                                                                                                                                                                                                                                                                     
+                                                                                                                                                                                                                                                                                                                                 
+                                                                                                                                                                                                                                                                                                                                     <p id="search-e8aeb94b-bed7-46ee-a484-d9ffafb679ae-0-0">
+                                                                                                                                                                                                                                                                                                                                                  
+                                                                                                                                                                                                                                                                                                                                                  
+                                                                                                                                                                                                                                                                                                                                                  
+                                                                                                                                                                                                                                                                                                                                                  
+                                                                                                                                                                                                                                                                                                                                                  
+                                                                                                                                                                                                                                                                                                                                                  
+                                                                                                                                                                                                                                                                                                                                              
+                                                                                                                                                                                                                                                                                                                                              Use <mark>vsds-sys-border-*</mark> to define border thickness, ensuring design consistency and maintainability.
+                                                                                                                                                                                                                                                                                                                                              </p>
+                                                                                                                                                                                                                                                                                                                                 
+                                                                                                                                                                                                                                                                                                                     
+                                                                                                                                                                                                                                                                                                                     
+                                                                                                                                                                                                                                                                                                                             </div>
+                                                                                                                                                                                                                                                                                              </div>
+                                                                                                                                                                                                                                                                                             
+                                                                                                                                                                                                                                                                                             
+                                                                                                                                                                                                                                                                                                
+                                                                                                                                                                                                                                                                                               <div class="guideline-item guideline-item__type-do">
+                                                                                                                                                                                                                                                                                                  <div class="type-badge type-badge__full">
+                                                                                                                                                                                                                                                                                                      <span class="icon">
+                                                                                                                                                                                                                                                                                                                         <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                                                                                                                                                                                                                                                                                                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                                                                                                                                                                                                                                                                                                            <circle cx="12" cy="12" r="9"></circle>
+                                                                                                                                                                                                                                                                                                                            <path d="M9 12l2 2l4 -4"></path>
+                                                                                                                                                                                                                                                                                                                         </svg>
+                                                                                                                                                                                                                                                                                                                         </span>
+                                                                                                                                                                                                                                                                                                      <span class="label">Do</span>
+                                                                                                                                                                                                                                                                                                  </div>
+                                                                                                                                                                                                                                                                                                  <div class="image img-align-left">
+                                                                                                                                                                                                                                                                                                                  
+                                                                                                                                                                                                                                                                                                                  
+                                                                                                                                                                                                                                                                                                                      <img src="./border_files/8f791637-f7ad-4b5b-8bde-4713b3e99bb6.png" class="image-asset">
+                                                                                                                                                                                                                                                                                                                             
+                                                                                                                                                                                                                                                                                                  </div>
+                                                                                                                                                                                                                                                                                          
+                                                                                                                                                                                                                                                                                                  <div class="content">
+                                                                                                                                                                                                                                                                                                                     
+                                                                                                                                                                                                                                                                                                                                 
+                                                                                                                                                                                                                                                                                                                                     <p id="search-e8aeb94b-bed7-46ee-a484-d9ffafb679ae-1-0">
+                                                                                                                                                                                                                                                                                                                                                  
+                                                                                                                                                                                                                                                                                                                                                  
+                                                                                                                                                                                                                                                                                                                                                  
+                                                                                                                                                                                                                                                                                                                                                  
+                                                                                                                                                                                                                                                                                                                                                  
+                                                                                                                                                                                                                                                                                                                                                  
+                                                                                                                                                                                                                                                                                                                                                  
+                                                                                                                                                                                                                                                                                                                                                  
+                                                                                                                                                                                                                                                                                                                                                  
+                                                                                                                                                                                                                                                                                                                                                  
+                                                                                                                                                                                                                                                                                                                                              
+                                                                                                                                                                                                                                                                                                                                              Pair with functional colors (e.g., <mark>outline</mark>, <mark>focus-outline</mark>) to enhance state feedback and accessibility contrast.
+                                                                                                                                                                                                                                                                                                                                              </p>
+                                                                                                                                                                                                                                                                                                                                 
+                                                                                                                                                                                                                                                                                                                     
+                                                                                                                                                                                                                                                                                                                     
+                                                                                                                                                                                                                                                                                                                             </div>
+                                                                                                                                                                                                                                                                                              </div>
+                                                                                                                                                                                                                                                                                             
+                                                                                                                                                                                                                                                                                             
+                                                                                                                                                                                                                                                                                                
+                                                                                                                                                                                                                                                                                               <div class="guideline-item guideline-item__type-dont">
+                                                                                                                                                                                                                                                                                                  <div class="type-badge type-badge__full">
+                                                                                                                                                                                                                                                                                                      <span class="icon">
+                                                                                                                                                                                                                                                                                                                         <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                                                                                                                                                                                                                                                                                                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                                                                                                                                                                                                                                                                                                            <circle cx="12" cy="12" r="9"></circle>
+                                                                                                                                                                                                                                                                                                                            <path d="M10 10l4 4m0 -4l-4 4"></path>
+                                                                                                                                                                                                                                                                                                                         </svg>
+                                                                                                                                                                                                                                                                                                                         </span>
+                                                                                                                                                                                                                                                                                                      <span class="label">Don't</span>
+                                                                                                                                                                                                                                                                                                  </div>
+                                                                                                                                                                                                                                                                                                  <div class="image img-align-left">
+                                                                                                                                                                                                                                                                                                                  
+                                                                                                                                                                                                                                                                                                                  
+                                                                                                                                                                                                                                                                                                                      <img src="./border_files/d322e96e-a607-4e12-a9aa-b6e96d911539.png" class="image-asset">
+                                                                                                                                                                                                                                                                                                                             
+                                                                                                                                                                                                                                                                                                  </div>
+                                                                                                                                                                                                                                                                                          
+                                                                                                                                                                                                                                                                                                  <div class="content">
+                                                                                                                                                                                                                                                                                                                     
+                                                                                                                                                                                                                                                                                                                                 
+                                                                                                                                                                                                                                                                                                                                     <p id="search-e8aeb94b-bed7-46ee-a484-d9ffafb679ae-2-0">
+                                                                                                                                                                                                                                                                                                                                                  
+                                                                                                                                                                                                                                                                                                                                                  
+                                                                                                                                                                                                                                                                                                                                              
+                                                                                                                                                                                                                                                                                                                                              Avoid changing border styles solely for aesthetics, as it may misrepresent semantics or function.
+                                                                                                                                                                                                                                                                                                                                              </p>
+                                                                                                                                                                                                                                                                                                                                 
+                                                                                                                                                                                                                                                                                                                     
+                                                                                                                                                                                                                                                                                                                     
+                                                                                                                                                                                                                                                                                                                             </div>
+                                                                                                                                                                                                                                                                                              </div>
+                                                                                                                                                                                                                                                                                             
+                                                                                                                                                                                                                                                                                             
+                                                                                                                                                                                                                                                                                          </div>
+                                    
+                                    
+                                                                        
+                                                
+                                                    <p>&nbsp;</p>
+                                                
+                                    
+                                    
+                                                                        
+                                                                                        
+                                                                                        
+                                                                                        <hr class="divider">
+                                                                                        
+                                    
+                                    
+                                                                        
+                                                            <div class="anchor" id="search-e92fd0b0-8c17-4cc4-b380-01874b6f0b89" aria-hidden="true"></div>
+                                                            
+                                                                    <h2 class="heading heading--level-2" id="section-learn-more-e9">
+                                                                        
+                                                                            
+                                                                            
+                                                                        
+                                                                        Learn more
+                                                                                                <a data-copy-url="true" title="Copy link to heading" class="copy-anchor" href="#section-learn-more-e9"><span class="css-pxzk9z" role="presentation"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M16.971 3.029a4.367 4.367 0 0 0-6.175 0l-2.27 2.269 1.25 1.249 2.269-2.269a2.6 2.6 0 1 1 3.677 3.677l-2.269 2.269 1.25 1.25 2.268-2.27a4.367 4.367 0 0 0 0-6.175Z" fill="currentColor"></path><path d="m13.526 7.798-1.324-1.324-5.728 5.728 1.324 1.324 5.728-5.728Z" fill="currentColor"></path><path d="m6.547 9.776-1.25-1.25-2.268 2.27a4.367 4.367 0 1 0 6.175 6.175l2.27-2.269-1.25-1.249-2.269 2.269a2.6 2.6 0 1 1-3.677-3.677l2.269-2.269Z" fill="currentColor"></path></svg></span></a>
+                                                                                            </h2>
+                                                            
+                                    
+                                    
+                                                                        
+                                                                                                                                                                                                                                                                        
+                                                                                                                                                                                                                                                                        <div class="content-block content-block--shortcuts variant-image-top-3" id="search-9792eedf-fe0a-42f0-9040-0fc395b13799">
+                                                                                                                                                                                                                                                                               
+                                                                                                                                                                                                                                                                                          
+                                                                                                                                                                                                                                                                                                  <a href="/en/styles/layout.html" class="shortcut-item">
+                                                                                                                                                                                                                                                                              
+                                                                                                                                                                                                                                                                                  <div class="preview" style="background: url(/image/shape-1.png);background-size: cover;background-position: center;"></div>
+                                                                                                                                                                                                                                                                                  <div class="content">
+                                                                                                                                                                                                                                                                                      <p class="title">Layout</p>
+                                                                                                                                                                                                                                                                                          <p class="description">See how borders help segment and align layouts to improve information clarity.</p>
+                                                                                                                                                                                                                                                                                  </div>
+                                                                                                                                                                                                                                                                                  </a>
+                                                                                                                                                                                                                                                                                     
+                                                                                                                                                                                                                                                                                          
+                                                                                                                                                                                                                                                                                                  <a href="/en/components/design-kit.html" class="shortcut-item">
+                                                                                                                                                                                                                                                                              
+                                                                                                                                                                                                                                                                                  <div class="preview" style="background: url(/image/shape-1.png);background-size: cover;background-position: center;"></div>
+                                                                                                                                                                                                                                                                                  <div class="content">
+                                                                                                                                                                                                                                                                                      <p class="title">Design kit</p>
+                                                                                                                                                                                                                                                                                          <p class="description">Learn how to apply border tokens in components like input fields and cards.</p>
+                                                                                                                                                                                                                                                                                  </div>
+                                                                                                                                                                                                                                                                                  </a>
+                                                                                                                                                                                                                                                                                     
+                                                                                                                                                                                                                                                                                          
+                                                                                                                                                                                                                                                                                                  <a href="/en/foundations/design-tokens/alias-tokens.html" class="shortcut-item">
+                                                                                                                                                                                                                                                                              
+                                                                                                                                                                                                                                                                                  <div class="preview" style="background: url(/image/shape-1.png);background-size: cover;background-position: center;"></div>
+                                                                                                                                                                                                                                                                                  <div class="content">
+                                                                                                                                                                                                                                                                                      <p class="title">Alias tokens</p>
+                                                                                                                                                                                                                                                                                          <p class="description">Review how border tokens are named to represent thickness or corner radius.</p>
+                                                                                                                                                                                                                                                                                  </div>
+                                                                                                                                                                                                                                                                                  </a>
+                                                                                                                                                                                                                                                                              </div>
+                                                                                                                                                                                                                                                                        
+                                    
+                                    
+                                    
+                    
+                
+                    <div class="page-bottom-navigation row">
+                        <div class="col left">
+                            <a class="segment" href="/en/foundations/design-tokens/alias-token-naming-and-usage/blur.html">
+                                <div class="arrow">
+                                    
+                                    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                       <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                       <line x1="5" y1="12" x2="19" y2="12"></line>
+                                       <line x1="5" y1="12" x2="11" y2="18"></line>
+                                       <line x1="5" y1="12" x2="11" y2="6"></line>
+                                    </svg>
+                                                    </div>
+                                <div class="segment-text">
+                                        <div class="section">Alias token naming &amp; usage</div>
+                                    <div class="pagename">Blur</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col right">
+                            <a href="/en/foundations/design-tokens/alias-token-naming-and-usage/breakpoint.html" class="segment">
+                                <div class="segment-text">
+                                        <div class="section">Alias token naming &amp; usage</div>
+                                    <div class="pagename">Breakpoint</div>
+                                </div>
+                                <div class="arrow">
+                                    
+                                    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                       <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                       <line x1="5" y1="12" x2="19" y2="12"></line>
+                                       <line x1="13" y1="18" x2="19" y2="12"></line>
+                                       <line x1="13" y1="6" x2="19" y2="12"></line>
+                                    </svg>
+                                                    </div>
+                            </a>
+                        </div>
+                    </div>
+                                </div>
+              </section>
+              
+                  <div id="content-nav-container">
+                      <nav id="content-nav">
+                              <span class="content-nav-header">On this page</span>
+                              <ul>
+                                      <li class="active"><a href="#section-learn-more-e9">Learn more</a></li>
+                              </ul>
+               
+                      </nav>
+                  </div>
+                          </div>
+
+            
+            
+                <div class="container-footer small" "="">
+                    <div class="slider">
+                        <p class="text-muted">© 2026 ViewSonic Design System. Page last updated on Oct 3, 2025, 05:34 <!--<a href="/zh-tw/get-started/get-started.html" target="_blank">Foundation Site <b>zhTW</b></a>--></p>
+                    </div>
+                </div>
+                      </main>
+        </div> 
+      </div> 
+    </div> 
+  </div>
+  
+</div>
+<!-- .site end --> 
+
+<!-- JavaScript -->
+
+
+<script src="./border_files/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="./border_files/hotkeys.min.js" integrity="sha512-0DDQV6AZNigMxQY3XxpqiEZO1bMT/zBgKtM3fhB3Yh4TGduw2HuFcJ7BSS96Ki1Am7gOY3RyRaE5cvdTsngRhw==" crossorigin="anonymous"></script>
+
+<!-- Bootstrap -->
+<script src="./border_files/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script> 
+
+<!-- Prism -->
+<script src="./border_files/prism.min.js" integrity="sha512-axJX7DJduStuBB8ePC8ryGzacZPr3rdLaIDZitiEgWWk2gsXxEFlm4UW0iNzj2h3wp5mOylgHAzBzM4nRSvTZA==" crossorigin="anonymous"></script>
+<script src="./border_files/prism-autoloader.min.js" integrity="sha512-xCfKr8zIONbip3Q1XG/u5x40hoJ0/DtP1bxyMEi0GWzUFoUffE+Dfw1Br8j55RRt9qG7bGKsh+4tSb1CvFHPSA==" crossorigin="anonymous"></script>
+<script src="./border_files/prism-normalize-whitespace.min.js" integrity="sha512-kkot4E7n1RXhUCh8s9gRT04qHrnqR9muvEX/Cj38JPGhQF1jZ4BXfhggGYp9GrxV8J/2EJnCHYeWfKIdmWmaMw==" crossorigin="anonymous"></script>
+<script src="./border_files/prism-toolbar.min.js" integrity="sha512-YrvgEHAi5/3o2OT+/vh1z19oJXk/Kk0qdVKbjEFl9VRmcLTaWRYzVziZCvoGpJ2TrnV7rB8pnJcz1ioVJjgw2A==" crossorigin="anonymous"></script>
+<script src="./border_files/prism-copy-to-clipboard.min.js" integrity="sha512-pUNGXbOrc+Y3dm5z2ZN7JYQ/2Tq0jppMDOUsN4sQHVJ9AUQpaeERCUfYYBAnaRB9r8d4gtPKMWICNhm3tRr4Fg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<!-- Live sandbox -->
+<script src="./border_files/sandbox_v13.js"></script> 
+
+<!-- Search Support-->
+<script src="./border_files/fuse.js@6.5.3" integrity="sha512-W+QdO2uEYG8oKLFGKPGGwT43RQWOBzAcxSpPMRyR6zAC3DLjMPp6GxoPvasKfs1pbYYXd0ByDCOiBd7M554qbw==" crossorigin="anonymous"></script>
+<script src="./border_files/si.js"></script>  
+
+<!-- General scripts -->
+<script src="./border_files/docs.min.js"></script>
+<script src="./border_files/functionality.js"></script>
+<script src="./border_files/cookie-consent.js"></script>
+
+<!-- After loading -->
+<script>
+$(document).ready(function() {
+    // Load versions
+    const versionUrl = "/latest/../versions.json"
+    loadVersions(versionUrl)
+
+    // Load sandboxes, if any
+    const sandboxConfigUrl = "/latest/../sandbox.json"
+    loadSandboxes(sandboxConfigUrl)
+
+
+    $("input[data-toggle='list-search']").on("keyup", function() {
+        searchInList($(this),$(this).attr("data-list-id"));
+    });
+
+})
+</script>
+
+
+
+
+
+
+
+<div id="shadow-host"><template shadowrootmode="open"><button class="open-phrases-button hide" id="open-phrases-button"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg" class=""><path d="M0.285887 6.74653C5.09813 7.99106 10.0081 5.09886 11.2526 0.286623C10.0081 5.09886 12.9003 10.0088 17.7125 11.2534C12.9003 10.0088 7.99032 12.901 6.7458 17.7133C7.99032 12.901 5.09813 7.99106 0.285887 6.74653Z" fill="white"></path></svg></button><div class="phrase-box hide " id="phrase-widget-box"><div class="loading-screen"><div><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg" class="spin"><path d="M0.285887 6.74653C5.09813 7.99106 10.0081 5.09886 11.2526 0.286623C10.0081 5.09886 12.9003 10.0088 17.7125 11.2534C12.9003 10.0088 7.99032 12.901 6.7458 17.7133C7.99032 12.901 5.09813 7.99106 0.285887 6.74653Z" fill="white"></path></svg></div><h2 class="text loading-text">Rephrasing...</h2></div></div><style>
+
+      .rephrased-screen {
+        min-height: 136px;
+      }
+
+      .open-phrases-button {
+        position: absolute;
+
+        background-color: rgba(47, 47, 47, 0.85);
+        backdrop-filter: blur(25px);
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        /* Primary */
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        filter: drop-shadow(0px 2px 6px rgba(0, 0, 0, 0.1)) drop-shadow(0px 8px 34px rgba(0, 0, 0, 0.15));
+        border-radius: 3px;
+
+        padding: 6px;
+
+        z-index: 999999;
+      }
+
+      .spin-once {
+        animation: spin 1s ease-in-out;
+      }
+
+      @keyframes spin {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
+      }
+
+      .phrase-box-hover {
+        background-color: rgba(47, 47, 47, 0.4);
+        backdrop-filter: blur(25px);
+      }
+
+      .text {
+        font-family: -apple-system, BlinkMacSystemFont, 'Lexend Deca', 'Helvetica Neue', sans-serif;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 18px;
+        /* or 138% */
+        letter-spacing: -0.08px;
+        color: #FFFFFF;
+        white-space: pre-line;
+      }
+
+      .loading-text {
+        cursor: default;
+        margin-left: 4px;
+      }
+
+      .loading-screen {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        min-height: 54px;
+      }
+      
+      .spin {
+        animation: spin 1s ease-in-out infinite;
+      }
+
+      .hide {
+        display: none;
+      }
+
+      .show {
+        display: flex;
+      }
+
+      .loading {
+
+      }
+
+      .close-button-hover {
+        cursor: pointer;
+      }
+
+      .close-button {
+        margin-top: 10px;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 8px 14px;
+        gap: 10px;
+
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        backdrop-filter: blur(9px);
+        /* Note: backdrop-filter has minimal browser support */
+
+        border-radius: 100px;
+
+        font-weight: bold;
+        color: #FFFFFF;
+      }
+
+      .copy-button-hover {
+        background-color: #3B4BD9;
+      }
+
+      .section-overlay {
+        position: absolute;
+
+        width: 100%;
+        height: 100%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .copy-button {
+        margin-top: 14px;
+
+        /* Auto layout */
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 8px 14px;
+        gap: 10px;
+
+        background: #FFFFFF;
+        border-radius: 100px;
+
+        /* White */
+        font-weight: bold;
+        color: black;
+
+        cursor: grab;
+      }
+
+      .section-hover {
+        filter: blur(12.5px);
+        transition: filter .25s;
+      }
+
+      #phrase-widget-box {
+        font-family: -apple-system, BlinkMacSystemFont, 'Lexend Deca', 'Helvetica Neue', sans-serif;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 18px;
+        /* or 138% */
+        letter-spacing: -0.08px;
+        color: #FFFFFF;
+
+        background-color: rgba(0,0,0,0.7);
+        backdrop-filter: blur(12.5px);
+
+        flex-direction: column;
+        width: 260px;
+        color: rgb(31 41 55 / var(--tw-text-opacity));
+        position: fixed;
+        top: 14px;
+        right: 14px;
+
+        justify-content: center;
+        align-items: center;
+
+        /* Primary */
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        filter: drop-shadow(0px 2px 6px rgba(0, 0, 0, 0.1)) drop-shadow(0px 8px 34px rgba(0, 0, 0, 0.15));
+        border-radius: 18px;
+
+        z-index: 999999;
+      }
+
+      .section {
+        background-color: rgb(243 244 246 / var(--tw-bg-opacity));
+        display: flex;
+        flex-direction: column;
+        padding: 18px;
+        justify-content: center;
+        align-items: center;
+      }
+
+      /*
+! tailwindcss v3.0.19 | MIT License | https://tailwindcss.com
+*//*
+1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
+2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)
+*/
+
+*,
+::before,
+::after {
+  box-sizing: border-box; /* 1 */
+  border-width: 0; /* 2 */
+  border-style: solid; /* 2 */
+  border-color: #e5e7eb; /* 2 */
+}
+
+::before,
+::after {
+  --tw-content: '';
+}
+
+/*
+1. Use a consistent sensible line-height in all browsers.
+2. Prevent adjustments of font size after orientation changes in iOS.
+3. Use a more readable tab size.
+4. Use the user's configured sans font-family by default.
+*/
+
+html {
+  line-height: 1.5; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+  -moz-tab-size: 4; /* 3 */
+  -o-tab-size: 4;
+     tab-size: 4; /* 3 */
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; /* 4 */
+}
+
+/*
+1. Remove the margin in all browsers.
+2. Inherit line-height from html so users can set them as a class directly on the html element.
+*/
+
+body {
+  margin: 0; /* 1 */
+  line-height: inherit; /* 2 */
+}
+
+/*
+1. Add the correct height in Firefox.
+2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
+3. Ensure horizontal rules are visible by default.
+*/
+
+hr {
+  height: 0; /* 1 */
+  color: inherit; /* 2 */
+  border-top-width: 1px; /* 3 */
+}
+
+/*
+Add the correct text decoration in Chrome, Edge, and Safari.
+*/
+
+abbr:where([title]) {
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+}
+
+/*
+Remove the default font size and weight for headings.
+*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*
+Reset links to optimize for opt-in styling instead of opt-out.
+*/
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+/*
+Add the correct font weight in Edge and Safari.
+*/
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/*
+1. Use the user's configured mono font family by default.
+2. Correct the odd em font sizing in all browsers.
+*/
+
+code,
+kbd,
+samp,
+pre {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/*
+Add the correct font size in all browsers.
+*/
+
+small {
+  font-size: 80%;
+}
+
+/*
+Prevent sub and sup elements from affecting the line height in all browsers.
+*/
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/*
+1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)
+2. Correct table border color inheritance in all Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)
+3. Remove gaps between table borders by default.
+*/
+
+table {
+  text-indent: 0; /* 1 */
+  border-color: inherit; /* 2 */
+  border-collapse: collapse; /* 3 */
+}
+
+/*
+1. Change the font styles in all browsers.
+2. Remove the margin in Firefox and Safari.
+3. Remove default padding in all browsers.
+*/
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: inherit; /* 1 */
+  color: inherit; /* 1 */
+  margin: 0; /* 2 */
+  padding: 0; /* 3 */
+}
+
+/*
+Remove the inheritance of text transform in Edge and Firefox.
+*/
+
+button,
+select {
+  text-transform: none;
+}
+
+/*
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Remove default button styles.
+*/
+
+button,
+[type='button'],
+[type='reset'],
+[type='submit'] {
+  -webkit-appearance: button; /* 1 */
+  background-color: transparent; /* 2 */
+  background-image: none; /* 2 */
+}
+
+/*
+Use the modern Firefox focus style for all focusable elements.
+*/
+
+:-moz-focusring {
+  outline: auto;
+}
+
+/*
+Remove the additional :invalid styles in Firefox. (https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737)
+*/
+
+:-moz-ui-invalid {
+  box-shadow: none;
+}
+
+/*
+Add the correct vertical alignment in Chrome and Firefox.
+*/
+
+progress {
+  vertical-align: baseline;
+}
+
+/*
+Correct the cursor style of increment and decrement buttons in Safari.
+*/
+
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/*
+1. Correct the odd appearance in Chrome and Safari.
+2. Correct the outline style in Safari.
+*/
+
+[type='search'] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/*
+Remove the inner padding in Chrome and Safari on macOS.
+*/
+
+::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/*
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Change font properties to inherit in Safari.
+*/
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/*
+Add the correct display in Chrome and Safari.
+*/
+
+summary {
+  display: list-item;
+}
+
+/*
+Removes the default spacing and border for appropriate elements.
+*/
+
+blockquote,
+dl,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+figure,
+p,
+pre {
+  margin: 0;
+}
+
+fieldset {
+  margin: 0;
+  padding: 0;
+}
+
+legend {
+  padding: 0;
+}
+
+ol,
+ul,
+menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+Prevent resizing textareas horizontally by default.
+*/
+
+textarea {
+  resize: vertical;
+}
+
+/*
+1. Reset the default placeholder opacity in Firefox. (https://github.com/tailwindlabs/tailwindcss/issues/3300)
+2. Set the default placeholder color to the user's configured gray 400 color.
+*/
+
+input::-moz-placeholder, textarea::-moz-placeholder {
+  opacity: 1; /* 1 */
+  color: #9ca3af; /* 2 */
+}
+
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+  opacity: 1; /* 1 */
+  color: #9ca3af; /* 2 */
+}
+
+input::placeholder,
+textarea::placeholder {
+  opacity: 1; /* 1 */
+  color: #9ca3af; /* 2 */
+}
+
+/*
+Set the default cursor for buttons.
+*/
+
+button,
+[role="button"] {
+  cursor: pointer;
+}
+
+/*
+Make sure disabled buttons don't get the pointer cursor.
+*/
+:disabled {
+  cursor: default;
+}
+
+/*
+1. Make replaced elements display: block by default. (https://github.com/mozdevs/cssremedy/issues/14)
+2. Add vertical-align: middle to align replaced elements more sensibly by default. (https://github.com/jensimmons/cssremedy/issues/14#issuecomment-634934210)
+   This can trigger a poorly considered lint error in some tools but is included by design.
+*/
+
+img,
+svg,
+video,
+canvas,
+audio,
+iframe,
+embed,
+object {
+  display: block; /* 1 */
+  vertical-align: middle; /* 2 */
+}
+
+/*
+Constrain images and videos to the parent width and preserve their intrinsic aspect ratio. (https://github.com/mozdevs/cssremedy/issues/14)
+*/
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+/*
+Ensure the default browser behavior of the hidden attribute.
+*/
+
+[hidden] {
+  display: none;
+}
+
+*, ::before, ::after {
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  --tw-pan-x:  ;
+  --tw-pan-y:  ;
+  --tw-pinch-zoom:  ;
+  --tw-scroll-snap-strictness: proximity;
+  --tw-ordinal:  ;
+  --tw-slashed-zero:  ;
+  --tw-numeric-figure:  ;
+  --tw-numeric-spacing:  ;
+  --tw-numeric-fraction:  ;
+  --tw-ring-inset:  ;
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: rgb(59 130 246 / 0.5);
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  --tw-blur:  ;
+  --tw-brightness:  ;
+  --tw-contrast:  ;
+  --tw-grayscale:  ;
+  --tw-hue-rotate:  ;
+  --tw-invert:  ;
+  --tw-saturate:  ;
+  --tw-sepia:  ;
+  --tw-drop-shadow:  ;
+  --tw-backdrop-blur:  ;
+  --tw-backdrop-brightness:  ;
+  --tw-backdrop-contrast:  ;
+  --tw-backdrop-grayscale:  ;
+  --tw-backdrop-hue-rotate:  ;
+  --tw-backdrop-invert:  ;
+  --tw-backdrop-opacity:  ;
+  --tw-backdrop-saturate:  ;
+  --tw-backdrop-sepia:  ;
+}
+.container {
+  width: 100%;
+}
+@media (min-width: 640px) {
+
+  .container {
+    max-width: 640px;
+  }
+}
+@media (min-width: 768px) {
+
+  .container {
+    max-width: 768px;
+  }
+}
+@media (min-width: 1024px) {
+
+  .container {
+    max-width: 1024px;
+  }
+}
+@media (min-width: 1280px) {
+
+  .container {
+    max-width: 1280px;
+  }
+}
+@media (min-width: 1536px) {
+
+  .container {
+    max-width: 1536px;
+  }
+}
+.m-12 {
+  margin: 3rem;
+}
+.flex {
+  display: flex;
+}
+.max-w-2xl {
+  max-width: 42rem;
+}
+.flex-1 {
+  flex: 1 1 0%;
+}
+.flex-row {
+  flex-direction: row;
+}
+.flex-col {
+  flex-direction: column;
+}
+.items-center {
+  align-items: center;
+}
+.justify-center {
+  justify-content: center;
+}
+.gap-x-4 {
+  -moz-column-gap: 1rem;
+       column-gap: 1rem;
+}
+.rounded-xl {
+  border-radius: 0.75rem;
+}
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+.bg-gray-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(243 244 246 / var(--tw-bg-opacity));
+}
+.p-8 {
+  padding: 2rem;
+}
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+.font-bold {
+  font-weight: 700;
+}
+.font-semibold {
+  font-weight: 600;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+.text-red-500 {
+  --tw-text-opacity: 1;
+  color: rgb(239 68 68 / var(--tw-text-opacity));
+}
+.text-gray-800 {
+  --tw-text-opacity: 1;
+  color: rgb(31 41 55 / var(--tw-text-opacity));
+}
+.text-orange-600 {
+  --tw-text-opacity: 1;
+  color: rgb(234 88 12 / var(--tw-text-opacity));
+}
+.text-green-600 {
+  --tw-text-opacity: 1;
+  color: rgb(22 163 74 / var(--tw-text-opacity));
+}
+</style></template></div></body></html>

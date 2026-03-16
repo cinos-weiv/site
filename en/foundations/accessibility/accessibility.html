@@ -1,0 +1,2308 @@
+<!DOCTYPE html>
+<!-- saved from url=(0086)/en/foundations/accessibility/accessibility.html -->
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+
+    <!-- Meta information -->
+    <meta name="robots" content="noindex">
+
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
+    <link href="/image/logo.png"
+        rel="icon">
+
+    <!-- Primary Meta Tags -->
+    <title>Accessibility | ViewSonic Design System</title>
+    <meta name="title" content="Accessibility | ViewSonic Design System">
+    <meta name="description"
+        content="Start designing with accessibility in mind by first understanding users&#39; real-life situations and needs. | ViewSonic Design System">
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="/latest/foundations/accessibility/accessibility-4yGOZGo9">
+    <meta property="og:title" content="Accessibility | ViewSonic Design System">
+    <meta property="og:description"
+        content="Start designing with accessibility in mind by first understanding users&#39; real-life situations and needs. | ViewSonic Design System">
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary">
+    <meta property="twitter:url" content="/latest/foundations/accessibility/accessibility-4yGOZGo9">
+    <meta property="twitter:title" content="Accessibility | ViewSonic Design System">
+    <meta property="twitter:description"
+        content="Start designing with accessibility in mind by first understanding users&#39; real-life situations and needs. | ViewSonic Design System">
+
+
+
+    <!-- Fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <link href="./accessibility_files/css2" rel="stylesheet">
+
+
+    <link href="./accessibility_files/css2(1)" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="./accessibility_files/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <!-- Styles -->
+    <link rel="stylesheet" type="text/css" href="./accessibility_files/docs.min.css">
+    <link rel="stylesheet" type="text/css" href="./accessibility_files/custom.css">
+
+    <script src="./accessibility_files/codemirror.min.js"
+        integrity="sha512-3S64QagKiTlNjSfuh3UYtYSkP494WHoWc96YvbmB2BReHpNtxlrMNY6MbJLDpavcgD8Pj5p44F/PY586uVO5iA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./accessibility_files/javascript.min.js"
+        integrity="sha512-I6CdJdruzGtvDyvdO4YsiAq+pkWf2efgd1ZUSK2FnM/u2VuRASPC7GowWQrWyjxCZn6CT89s3ddGI+be0Ak9Fg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./accessibility_files/xml.min.js"
+        integrity="sha512-LarNmzVokUmcA7aUDtqZ6oTS+YXmUKzpGdm8DxC46A6AHu+PQiYCUlwEGWidjVYMo/QXZMFMIadZtrkfApYp/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./accessibility_files/jsx.min.js"
+        integrity="sha512-+0Bk5jqcZFYMi5WaRZaTboF7s25sht/1pxmg3sXqWDeidrrw1yRqDzF25jsMOnToR8iXSqzrHfAD5wiDO1lwSA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="./accessibility_files/codemirror.min.css"
+        integrity="sha512-uf06llspW44/LZpHzHT6qBOIVODjWtv4MxCricRxkzvopAlSWnTf6hpZTFxuuZcuNE9CBQhqE0Seu1CoRk84nQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <!-- Asset download -->
+    <script src="./accessibility_files/jszip.min.js"
+        integrity="sha512-xQBQYt9UcgblF6aCMrwU1NkVA7HCXaSN2oq0so80KO+y68M+n64FOcqgav4igHe6D5ObBLIf68DWv+gfBowczg=="
+        crossorigin="anonymous"></script>
+    <script src="./accessibility_files/FileSaver.min.js"
+        integrity="sha512-Qlv6VSKh1gDKGoJbnyA5RMXYcvnpIqhO++MhIM2fStMcGT9i2T//tSwYFlcyoRRDcDZ+TYHpH8azBBCyhpSeqw=="
+        crossorigin="anonymous"></script>
+
+    <!-- Supernova meta -->
+    <script>
+        if (!window.supernova) {
+            window.supernova = {};
+        }
+
+        window.supernova.designSystem = {
+            id: '357248',
+            name: 'ViewSonic Design System',
+            description: '',
+        };
+        window.supernova.version = {
+            version: 'Shared Draft',
+            description: '',
+            versionName: 'Shared Draft',
+        };
+        window.supernova.page = {
+            title: 'Accessibility',
+            persistendId: '4a82edd0-4bae-11ec-a0dd-9f8e86820f15',
+            shortPersistendId: '4yGOZGo9',
+            lastPublished: 'Thu Oct 16 2025 10:38:12 GMT+0000 (Coordinated Universal Time)'
+        };
+    </script>
+
+
+    <script src="./accessibility_files/storybook-playground-1.0.3.js"></script>
+
+
+    <script>
+        /* 把 <h4> 改寫為 <checkbox> */
+        document.addEventListener("DOMContentLoaded", function () {
+            const headings = document.querySelectorAll("h4");
+
+            headings.forEach((h4, index) => {
+                const checkboxId = "checkbox-" + (index + 1);
+
+                // 取出原本的子節點（保留結構）
+                const originalNodes = Array.from(h4.childNodes);
+
+                // 清空 h4，重新組結構
+                h4.textContent = "";
+
+                // 建立 checkbox
+                const checkbox = document.createElement("input");
+                checkbox.type = "checkbox";
+                checkbox.id = checkboxId;
+                checkbox.classList.add("vsbox");
+
+                // 建立 label
+                const label = document.createElement("label");
+                label.setAttribute("for", checkboxId);
+
+                // 把除了 <a> 和 <mark> 的節點放進 label
+                originalNodes.forEach(node => {
+                    if (
+                        node.nodeType === Node.ELEMENT_NODE &&
+                        (node.tagName === "A" || node.tagName === "MARK")
+                    ) {
+                        // <a> 和 <mark> 直接放回 h4，不包進 label
+                        h4.appendChild(node);
+                    } else {
+                        label.appendChild(node);
+                    }
+                });
+
+                // 從 localStorage 讀取狀態
+                const savedState = localStorage.getItem(checkboxId);
+                if (savedState === "true") {
+                    checkbox.checked = true;
+                    h4.classList.add("vs-checked");
+                }
+
+                // checkbox 變化時更新
+                checkbox.addEventListener("change", function () {
+                    localStorage.setItem(checkboxId, checkbox.checked);
+                    h4.classList.toggle("vs-checked", checkbox.checked);
+                });
+
+                // 組合回去：checkbox → label → (可能的 a, mark)
+                h4.prepend(checkbox);
+                h4.insertBefore(label, checkbox.nextSibling);
+            });
+        });
+    </script>
+
+
+    <script>
+        /* Footer 裡塞英文網站連結 */
+        document.addEventListener("DOMContentLoaded", () => {
+            const footer = document.querySelector(".container-footer.small p");
+            if (!footer) return;
+
+            const link = document.createElement("a");
+            link.href = "/zh-tw/get-started/get-started.html";
+            link.target = "_blank";
+            link.innerHTML = 'Foundation Site <b>zhTW</b>';
+
+            footer.appendChild(document.createTextNode(" "));
+            footer.appendChild(link);
+        });
+    </script>
+
+</head>
+
+<body class="page-body/foundations/accessibility/accessibility-4yGOZGo9">
+
+
+
+    <div class="SNSearch SNSearch-container backdrop-blur">
+        <div class="SNSearch-box">
+            <header class="SNSearch-header">
+                <label class="SNSearch-input-label">
+                    <span class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" width="20" height="20"
+                            viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                            <circle cx="10" cy="10" r="7"></circle>
+                            <line x1="21" y1="21" x2="15" y2="15"></line>
+                        </svg>
+                    </span>
+                </label>
+                <form class="SNSearch-form">
+                    <input class="SNSearch-input" id="SNSearch-input" autocomplete="off" autocapitalize="off"
+                        spellcheck="false" placeholder="Search documentation..." maxlength="64" enterkeyhint="go">
+                </form>
+                <button class="SNSearch-close search">
+                    <span class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" width="20" height="20"
+                            viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                            <line x1="18" y1="6" x2="6" y2="18"></line>
+                            <line x1="6" y1="6" x2="18" y2="18"></line>
+                        </svg>
+                    </span>
+                </button>
+            </header>
+            <div class="SNSearch-results">
+
+            </div>
+            <footer class="SNSearch-footer">
+                <div class="info">
+                    <span>Cmd</span>/<span>Ctrl</span> + <span>K</span> to search
+                </div>
+                <div class="info">
+                    <span>ESC</span> to clear / exit
+                </div>
+            </footer>
+        </div>
+    </div>
+    <!-- Document Wrapper -->
+    <div id="main-wrapper">
+
+        <!-- Content -->
+        <div id="content" class="site-wrapper hidden-top-nav">
+
+
+
+            <header id="header" class="mobile-header sticky-top style-dark">
+                <!-- Navbar -->
+                <nav class="primary-menu navbar navbar-expand-lg">
+                    <button id="sidebarCollapse" class="toggle-navbar" type="button" aria-label="Open navigation">
+
+                        <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" width="20" height="20"
+                            viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                            <line x1="4" y1="6" x2="20" y2="6"></line>
+                            <line x1="4" y1="12" x2="20" y2="12"></line>
+                            <line x1="4" y1="18" x2="20" y2="18"></line>
+                        </svg> </button>
+                </nav>
+            </header>
+
+            <div class="site">
+                <div class="site-content-wrapper">
+                    <div class="site-content">
+                        <!-- Sidebar Navigation -->
+                        <nav class="side-navigation-wrapper style-dark" id="side-navigation">
+                            <div class="bg-sidebar"></div>
+                            <div class="sidebar-navigation docs-navigation">
+
+
+
+
+
+                                <div class="site-logo-wrapper">
+
+                                    <!-- Logo -->
+                                    <a href="/en/get-started/get-started.html"
+                                        class="site-logo" aria-label="ViewSonic Design System">
+
+                                        <img src="./accessibility_files/d26c93de-c70d-4300-8538-9e8b1c384a8c.svg"
+                                            alt="ViewSonic Design System">
+                                    </a>
+                                    <button class="btn-icon-button btn-search search expanded">
+                                        <div class="icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" width="20"
+                                                height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+                                                fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                                <circle cx="10" cy="10" r="7"></circle>
+                                                <line x1="21" y1="21" x2="15" y2="15"></line>
+                                            </svg>
+                                        </div>
+                                        <div class="label">Search</div>
+                                    </button>
+                                </div>
+
+
+                                <ul class="nav with-root-level">
+
+
+                                    <li class="nav-item">
+
+                                        <a class="nav-link group"
+                                            href="/en/get-started/get-started.html">
+                                            <span>
+                                                Get started
+                                            </span>
+                                            <span class="icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" width="20"
+                                                    height="20" viewBox="0 0 24 24" stroke-width="2"
+                                                    stroke="currentColor" fill="none" stroke-linecap="round"
+                                                    stroke-linejoin="round">
+                                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                                    <polyline points="9 6 15 12 9 18"></polyline>
+                                                </svg>
+                                            </span> </a>
+                                    </li>
+
+
+                                    <li class="nav-item">
+
+                                        <a class="nav-link group active"
+                                            href="/en/foundations/accessibility/accessibility.html">
+                                            <span>
+                                                Foundations
+                                            </span>
+                                            <span class="icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" width="20"
+                                                    height="20" viewBox="0 0 24 24" stroke-width="2"
+                                                    stroke="currentColor" fill="none" stroke-linecap="round"
+                                                    stroke-linejoin="round">
+                                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                                    <polyline points="9 6 15 12 9 18"></polyline>
+                                                </svg>
+                                            </span> </a>
+
+
+
+
+
+
+
+                                        <ul class="nav with-root-level">
+
+
+                                            <li class="nav-item">
+
+                                                <a class="nav-link group active"
+                                                    href="/en/foundations/accessibility/accessibility.html">
+                                                    <span>
+                                                        Accessibility
+                                                    </span>
+                                                    <span class="icon">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                                                            width="20" height="20" viewBox="0 0 24 24" stroke-width="2"
+                                                            stroke="currentColor" fill="none" stroke-linecap="round"
+                                                            stroke-linejoin="round">
+                                                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                                            <polyline points="9 6 15 12 9 18"></polyline>
+                                                        </svg>
+                                                    </span> </a>
+
+
+
+
+
+
+
+                                                <ul class="nav with-root-level">
+
+
+                                                    <li class="nav-item">
+                                                        <a class="nav-link active"
+                                                            href="/en/foundations/accessibility/accessibility.html">
+                                                            <span>
+                                                                Accessibility
+                                                            </span>
+                                                        </a>
+                                                    </li>
+
+
+                                                    <li class="nav-item">
+
+                                                        <a class="nav-link group"
+                                                            href="/en/foundations/accessibility/checklist/overview.html">
+                                                            <span>
+                                                                Checklist
+                                                            </span>
+                                                            <span class="icon">
+                                                                <svg xmlns="http://www.w3.org/2000/svg"
+                                                                    aria-hidden="true" width="20" height="20"
+                                                                    viewBox="0 0 24 24" stroke-width="2"
+                                                                    stroke="currentColor" fill="none"
+                                                                    stroke-linecap="round" stroke-linejoin="round">
+                                                                    <path stroke="none" d="M0 0h24v24H0z" fill="none">
+                                                                    </path>
+                                                                    <polyline points="9 6 15 12 9 18"></polyline>
+                                                                </svg>
+                                                            </span> </a>
+                                                    </li>
+
+                                                </ul>
+                                            </li>
+
+
+                                            <li class="nav-item">
+
+                                                <a class="nav-link group"
+                                                    href="/en/foundations/design-tokens/design-tokens.html">
+                                                    <span>
+                                                        Design tokens
+                                                    </span>
+                                                    <span class="icon">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                                                            width="20" height="20" viewBox="0 0 24 24" stroke-width="2"
+                                                            stroke="currentColor" fill="none" stroke-linecap="round"
+                                                            stroke-linejoin="round">
+                                                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                                            <polyline points="9 6 15 12 9 18"></polyline>
+                                                        </svg>
+                                                    </span> </a>
+                                            </li>
+
+
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="/en/foundations/themes.html">
+                                                    <span>
+                                                        Themes
+                                                    </span>
+                                                </a>
+                                            </li>
+
+                                        </ul>
+                                    </li>
+
+
+                                    <li class="nav-item">
+
+                                        <a class="nav-link group" href="/en/styles/overview.html">
+                                            <span>
+                                                Styles
+                                            </span>
+                                            <span class="icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" width="20"
+                                                    height="20" viewBox="0 0 24 24" stroke-width="2"
+                                                    stroke="currentColor" fill="none" stroke-linecap="round"
+                                                    stroke-linejoin="round">
+                                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                                    <polyline points="9 6 15 12 9 18"></polyline>
+                                                </svg>
+                                            </span> </a>
+                                    </li>
+
+
+                                    <li class="nav-item">
+
+                                        <a class="nav-link group" href="/en/components/design-kit.html">
+                                            <span>
+                                                Components
+                                            </span>
+                                            <span class="icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" width="20"
+                                                    height="20" viewBox="0 0 24 24" stroke-width="2"
+                                                    stroke="currentColor" fill="none" stroke-linecap="round"
+                                                    stroke-linejoin="round">
+                                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                                    <polyline points="9 6 15 12 9 18"></polyline>
+                                                </svg>
+                                            </span> </a>
+                                    </li>
+
+
+                                </ul>
+                            </div>
+                            <script>
+                                // Restore scroll position, `menu.scroll.position.top` is set in in functionality.js
+                                const scrollPosition = localStorage.getItem('menu.scroll.position.top');
+                                if (scrollPosition) {
+                                    document.querySelector('.sidebar-navigation').scrollTop = scrollPosition;
+                                }
+                            </script>
+                        </nav>
+
+                        <!-- Docs Content -->
+                        <main class="docs-content">
+
+
+
+
+
+
+
+
+                            <div class="container-title"
+                                style="background: url(/image/background.jpg) no-repeat center center; background-size: cover;">
+
+                                <div class="slider">
+
+
+
+                                    <h1 class="page-title" style="">Accessibility</h1>
+
+                                    <p class="subtitle" style="">Start designing with accessibility in mind by first
+                                        understanding users' real-life situations and needs.</p>
+                                </div>
+                            </div>
+
+                            <div class="no-container-tabs"></div>
+
+
+                            <div class="content-container">
+                                <section id="section-content-page">
+                                    <div class="tab-content" id="page-tab-content">
+
+
+
+                                        <p id="search-a456a9a6-bd42-4fe0-9a05-c04b3d1a6ac2">
+
+
+
+                                            Accessibility design is a strategy to improve product quality and ensure
+                                            equitable use. When done well, users may not even notice who it specifically
+                                            benefits — they simply experience a design that feels usable, welcoming, and
+                                            accessible to everyone.
+                                        </p>
+
+
+
+
+
+                                        <p>&nbsp;</p>
+
+
+
+
+                                        <div class="anchor" id="search-a46e4df9-95bc-4351-a444-ce079f53b3e3"
+                                            aria-hidden="true"></div>
+
+                                        <h2 class="heading heading--level-2"
+                                            id="section-starting-from-accessibility-a4">
+
+
+
+
+                                            <strong>Starting from Accessibility</strong>
+                                            <a data-copy-url="true" title="Copy link to heading" class="copy-anchor"
+                                                href="#section-starting-from-accessibility-a4"><span class="css-pxzk9z"
+                                                    role="presentation"><svg xmlns="http://www.w3.org/2000/svg"
+                                                        viewBox="0 0 20 20">
+                                                        <path
+                                                            d="M16.971 3.029a4.367 4.367 0 0 0-6.175 0l-2.27 2.269 1.25 1.249 2.269-2.269a2.6 2.6 0 1 1 3.677 3.677l-2.269 2.269 1.25 1.25 2.268-2.27a4.367 4.367 0 0 0 0-6.175Z"
+                                                            fill="currentColor"></path>
+                                                        <path
+                                                            d="m13.526 7.798-1.324-1.324-5.728 5.728 1.324 1.324 5.728-5.728Z"
+                                                            fill="currentColor"></path>
+                                                        <path
+                                                            d="m6.547 9.776-1.25-1.25-2.268 2.27a4.367 4.367 0 1 0 6.175 6.175l2.27-2.269-1.25-1.249-2.269 2.269a2.6 2.6 0 1 1-3.677-3.677l2.269-2.269Z"
+                                                            fill="currentColor"></path>
+                                                    </svg></span></a>
+                                        </h2>
+
+
+
+
+
+                                        <p id="search-4a8d650a-ab4e-4ce3-9893-58133801876d">
+
+
+
+                                            In real educational and administrative settings, roles like students,
+                                            teachers, school administrators, and IT staff may face limitations. These
+                                            can include reading difficulties, temporary hand injuries, age-related
+                                            hearing loss, or simply harsh lighting or screen glare. All of which affect
+                                            how users interact with products.
+                                        </p>
+
+
+
+
+
+                                        <p id="search-1226d81d-b58f-416d-b37d-55282b885bc7">
+
+
+
+                                            For example:
+                                        </p>
+
+
+
+
+                                        <ul class="content-block">
+                                            <div class="anchor" id="search-6962b802-bece-4f4a-b237-61f148e62991"
+                                                aria-hidden="true"></div>
+                                            <li>
+
+
+
+                                                Students may encounter reading disabilities or rely on
+                                                keyboard-accessible assistive tools when using digital learning
+                                                materials.
+                                            </li>
+
+
+
+                                            <div class="anchor" id="search-6962b802-bece-4f4a-b237-61f148e62991-1"
+                                                aria-hidden="true"></div>
+                                            <li>
+
+
+
+                                                Teachers often need to switch screens, write, and click rapidly during
+                                                lectures. If feedback is unclear or buttons are too small, it can create
+                                                operational stress.
+                                            </li>
+
+
+
+                                            <div class="anchor" id="search-6962b802-bece-4f4a-b237-61f148e62991-2"
+                                                aria-hidden="true"></div>
+                                            <li>
+
+
+
+                                                School administrators must evaluate whether the system fairly provides
+                                                equal participation opportunities to every user.
+                                            </li>
+
+
+
+                                            <div class="anchor" id="search-6962b802-bece-4f4a-b237-61f148e62991-3"
+                                                aria-hidden="true"></div>
+                                            <li>
+
+
+
+                                                IT managers need to ensure that devices and platforms support assistive
+                                                technologies and can be maintained reliably.
+                                            </li>
+
+                                        </ul>
+
+
+
+                                        <p id="search-ce3472fc-1236-4f69-ad8b-76be97c66113">
+
+
+
+                                            As our products expand into business environments, accessibility continues
+                                            to play a crucial role.
+                                        </p>
+
+
+
+
+
+                                        <p id="search-496f16c0-21f1-4766-81be-c1e61e809db9">
+
+
+
+                                            Whether it’s remote collaboration, conferencing systems, or display tools,
+                                            failing to consider user constraints and flexibility can reduce the overall
+                                            experience and adoption.
+                                        </p>
+
+
+
+
+
+                                        <p id="search-480bbf37-e879-46c3-8547-5d9ddc86d542">
+
+
+
+                                            Accessibility is one of the core values of the ViewSonic Design System. We
+                                            continue integrating it into component styles, token definitions, and
+                                            handoff documentation.
+                                        </p>
+
+
+
+
+
+                                        <p id="search-96db080c-58ec-4fdc-9773-bc45c661ec6c">
+
+
+
+                                            While most use cases today are from education, we’re starting to build
+                                            accessibility by default into business and collaboration products, ensuring
+                                            all users can interact smoothly.
+                                        </p>
+
+
+
+
+
+                                        <p id="search-739ca68a-b537-4f4d-aeb0-bb97d3982b41">
+
+
+
+                                            <strong>Accessibility is not designed for just a few — it's meant to ensure
+                                                everyone can use our products under all conditions.</strong>
+                                        </p>
+
+
+
+
+
+                                        <p id="search-59f35134-111d-483c-848b-a84cbc613b25">
+
+
+
+                                            It’s not just a legal requirement. It’s a fundamental responsibility that
+                                            improves product quality and user experience.
+                                        </p>
+
+
+
+
+
+                                        <p>&nbsp;</p>
+
+
+
+
+
+                                        <p id="search-43d91015-305e-4b8b-8d26-25d6c42621e9">
+
+
+
+                                            Statistics show:
+                                        </p>
+
+
+
+
+                                        <ul class="content-block">
+                                            <div class="anchor" id="search-6de97eba-9abc-49e1-8b55-3eea6287cb17"
+                                                aria-hidden="true"></div>
+                                            <li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                Around&nbsp;<strong>300 to 350 million people</strong>&nbsp;worldwide
+                                                are affected by color vision deficiency,
+                                                approximately&nbsp;<strong>4.5%</strong>&nbsp;of the population —
+                                                including about&nbsp;<strong>8% of men</strong>.
+                                            </li>
+
+
+
+                                            <div class="anchor" id="search-6de97eba-9abc-49e1-8b55-3eea6287cb17-1"
+                                                aria-hidden="true"></div>
+                                            <li>
+
+
+
+
+
+
+
+
+
+
+
+                                                About&nbsp;<strong>10–20% of the population</strong>&nbsp;have
+                                                language-based learning disabilities (such as dyslexia),
+                                                meaning&nbsp;<strong>1 in 10 people</strong>&nbsp;in educational
+                                                settings may be affected.
+                                            </li>
+
+
+
+                                            <div class="anchor" id="search-6de97eba-9abc-49e1-8b55-3eea6287cb17-2"
+                                                aria-hidden="true"></div>
+                                            <li>
+
+
+
+
+
+
+
+
+
+
+
+                                                Approximately&nbsp;<strong>430 million people</strong>&nbsp;worldwide
+                                                have moderate or severe hearing loss, including&nbsp;<strong>34 million
+                                                    children</strong>.
+                                            </li>
+
+
+
+                                            <div class="anchor" id="search-6de97eba-9abc-49e1-8b55-3eea6287cb17-3"
+                                                aria-hidden="true"></div>
+                                            <li>
+
+
+
+
+
+
+
+
+
+
+
+                                                At least&nbsp;<strong>2.2 billion people</strong>&nbsp;experience some
+                                                form of vision impairment, with&nbsp;<strong>over 1
+                                                    billion</strong>&nbsp;lacking proper treatment.
+                                            </li>
+
+                                        </ul>
+
+
+
+
+                                        <blockquote class="content-block"
+                                            id="search-650bf059-67b5-4dd8-9927-2d367de99956">
+                                            <span class="icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" width="20"
+                                                    height="20" viewBox="0 0 24 24" stroke-width="2"
+                                                    stroke="currentColor" fill="none" stroke-linecap="round"
+                                                    stroke-linejoin="round">
+                                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                                    <path
+                                                        d="M10 11h-4a1 1 0 0 1 -1 -1v-3a1 1 0 0 1 1 -1h3a1 1 0 0 1 1 1v6c0 2.667 -1.333 4.333 -4 5">
+                                                    </path>
+                                                    <path
+                                                        d="M19 11h-4a1 1 0 0 1 -1 -1v-3a1 1 0 0 1 1 -1h3a1 1 0 0 1 1 1v6c0 2.667 -1.333 4.333 -4 5">
+                                                    </path>
+                                                </svg>
+                                            </span>
+
+
+
+
+
+
+
+
+
+
+
+                                            For full data, refer to the&nbsp;<a href="#section-sources-c4">source links
+                                                below</a>.
+                                        </blockquote>
+
+
+
+
+                                        <p>&nbsp;</p>
+
+
+
+
+                                        <div class="anchor" id="search-2067e376-211e-4f36-8e5b-1fe56ad177c0"
+                                            aria-hidden="true"></div>
+
+                                        <h2 class="heading heading--level-2" id="section-what-is-accessibility-20">
+
+
+
+
+                                            What is Accessibility?
+                                            <a data-copy-url="true" title="Copy link to heading" class="copy-anchor"
+                                                href="#section-what-is-accessibility-20"><span class="css-pxzk9z"
+                                                    role="presentation"><svg xmlns="http://www.w3.org/2000/svg"
+                                                        viewBox="0 0 20 20">
+                                                        <path
+                                                            d="M16.971 3.029a4.367 4.367 0 0 0-6.175 0l-2.27 2.269 1.25 1.249 2.269-2.269a2.6 2.6 0 1 1 3.677 3.677l-2.269 2.269 1.25 1.25 2.268-2.27a4.367 4.367 0 0 0 0-6.175Z"
+                                                            fill="currentColor"></path>
+                                                        <path
+                                                            d="m13.526 7.798-1.324-1.324-5.728 5.728 1.324 1.324 5.728-5.728Z"
+                                                            fill="currentColor"></path>
+                                                        <path
+                                                            d="m6.547 9.776-1.25-1.25-2.268 2.27a4.367 4.367 0 1 0 6.175 6.175l2.27-2.269-1.25-1.249-2.269 2.269a2.6 2.6 0 1 1-3.677-3.677l2.269-2.269Z"
+                                                            fill="currentColor"></path>
+                                                    </svg></span></a>
+                                        </h2>
+
+
+
+
+
+                                        <p id="search-3f7a940d-f63c-4d32-8ec8-752e3312a20d">
+
+
+
+
+
+
+
+                                            Accessibility is a set of design principles that ensure <strong>everyone,
+                                                regardless of ability, age, or environment</strong>, can access,
+                                            understand, and interact with digital content.
+                                        </p>
+
+
+
+
+                                        <div class="anchor" id="search-6b4b80eb-10e4-4539-9ba6-a792a7466a68"
+                                            aria-hidden="true"></div>
+
+                                        <h3 class="heading heading--level-3"
+                                            id="section-common-aspects-of-accessibility-design--6b">
+
+
+
+
+                                            Common Aspects of Accessibility Design:
+                                            <a data-copy-url="true" title="Copy link to heading" class="copy-anchor"
+                                                href="#section-common-aspects-of-accessibility-design--6b"><span
+                                                    class="css-pxzk9z" role="presentation"><svg
+                                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                                                        <path
+                                                            d="M16.971 3.029a4.367 4.367 0 0 0-6.175 0l-2.27 2.269 1.25 1.249 2.269-2.269a2.6 2.6 0 1 1 3.677 3.677l-2.269 2.269 1.25 1.25 2.268-2.27a4.367 4.367 0 0 0 0-6.175Z"
+                                                            fill="currentColor"></path>
+                                                        <path
+                                                            d="m13.526 7.798-1.324-1.324-5.728 5.728 1.324 1.324 5.728-5.728Z"
+                                                            fill="currentColor"></path>
+                                                        <path
+                                                            d="m6.547 9.776-1.25-1.25-2.268 2.27a4.367 4.367 0 1 0 6.175 6.175l2.27-2.269-1.25-1.249-2.269 2.269a2.6 2.6 0 1 1-3.677-3.677l2.269-2.269Z"
+                                                            fill="currentColor"></path>
+                                                    </svg></span></a>
+                                        </h3>
+
+
+
+
+                                        <ul class="content-block">
+                                            <div class="anchor" id="search-e2af5b24-8457-402b-86e7-7d4514d634eb"
+                                                aria-hidden="true"></div>
+                                            <li>
+
+
+
+
+
+                                                <strong>Visual</strong>: color contrast, alt text, clear typography,
+                                                screen reader support.
+                                            </li>
+
+
+
+                                            <div class="anchor" id="search-e2af5b24-8457-402b-86e7-7d4514d634eb-1"
+                                                aria-hidden="true"></div>
+                                            <li>
+
+
+
+
+
+                                                <strong>Auditory</strong>: captions, transcripts, visual cues.
+                                            </li>
+
+
+
+                                            <div class="anchor" id="search-e2af5b24-8457-402b-86e7-7d4514d634eb-2"
+                                                aria-hidden="true"></div>
+                                            <li>
+
+
+
+
+
+                                                <strong>Cognitive</strong>: simplified language, clear structure,
+                                                reduced distractions.
+                                            </li>
+
+
+
+                                            <div class="anchor" id="search-e2af5b24-8457-402b-86e7-7d4514d634eb-3"
+                                                aria-hidden="true"></div>
+                                            <li>
+
+
+
+
+
+                                                <strong>Interaction</strong>: keyboard navigation, properly labeled
+                                                fields, logical focus order.
+                                            </li>
+
+                                        </ul>
+
+
+
+                                        <p>&nbsp;</p>
+
+
+
+
+                                        <div class="anchor" id="search-96243631-3835-4383-9aee-d220e7e7f69b"
+                                            aria-hidden="true"></div>
+
+                                        <h2 class="heading heading--level-2"
+                                            id="section-design-with-accessibility-in-mind-from-the-start-96">
+
+
+
+
+                                            Design with accessibility in mind from the start
+                                            <a data-copy-url="true" title="Copy link to heading" class="copy-anchor"
+                                                href="#section-design-with-accessibility-in-mind-from-the-start-96"><span
+                                                    class="css-pxzk9z" role="presentation"><svg
+                                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                                                        <path
+                                                            d="M16.971 3.029a4.367 4.367 0 0 0-6.175 0l-2.27 2.269 1.25 1.249 2.269-2.269a2.6 2.6 0 1 1 3.677 3.677l-2.269 2.269 1.25 1.25 2.268-2.27a4.367 4.367 0 0 0 0-6.175Z"
+                                                            fill="currentColor"></path>
+                                                        <path
+                                                            d="m13.526 7.798-1.324-1.324-5.728 5.728 1.324 1.324 5.728-5.728Z"
+                                                            fill="currentColor"></path>
+                                                        <path
+                                                            d="m6.547 9.776-1.25-1.25-2.268 2.27a4.367 4.367 0 1 0 6.175 6.175l2.27-2.269-1.25-1.249-2.269 2.269a2.6 2.6 0 1 1-3.677-3.677l2.269-2.269Z"
+                                                            fill="currentColor"></path>
+                                                    </svg></span></a>
+                                        </h2>
+
+
+
+
+
+                                        <p id="search-b4734a59-3401-4971-a310-7cd628a71148">
+
+
+
+                                            You don’t need to meet every standard all at once. Instead, begin by
+                                            considering limitations and usage contexts early in the design process. This
+                                            approach will lead to more accessible products in practice.
+                                        </p>
+
+
+
+
+                                        <div class="anchor" id="search-90d7f388-7cbd-4794-b6ef-443a97bc8023"
+                                            aria-hidden="true"></div>
+
+                                        <h3 class="heading heading--level-3"
+                                            id="section-begin-with-some-simple-checks--90">
+
+
+
+
+                                            Begin with some simple checks:
+                                            <a data-copy-url="true" title="Copy link to heading" class="copy-anchor"
+                                                href="#section-begin-with-some-simple-checks--90"><span
+                                                    class="css-pxzk9z" role="presentation"><svg
+                                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                                                        <path
+                                                            d="M16.971 3.029a4.367 4.367 0 0 0-6.175 0l-2.27 2.269 1.25 1.249 2.269-2.269a2.6 2.6 0 1 1 3.677 3.677l-2.269 2.269 1.25 1.25 2.268-2.27a4.367 4.367 0 0 0 0-6.175Z"
+                                                            fill="currentColor"></path>
+                                                        <path
+                                                            d="m13.526 7.798-1.324-1.324-5.728 5.728 1.324 1.324 5.728-5.728Z"
+                                                            fill="currentColor"></path>
+                                                        <path
+                                                            d="m6.547 9.776-1.25-1.25-2.268 2.27a4.367 4.367 0 1 0 6.175 6.175l2.27-2.269-1.25-1.249-2.269 2.269a2.6 2.6 0 1 1-3.677-3.677l2.269-2.269Z"
+                                                            fill="currentColor"></path>
+                                                    </svg></span></a>
+                                        </h3>
+
+
+
+
+                                        <ul class="content-block">
+                                            <div class="anchor" id="search-61178cc6-e953-4da7-bb8c-f7132f8d74a6"
+                                                aria-hidden="true"></div>
+                                            <li>
+
+
+
+                                                Is the text clear? Is the color contrast sufficient?
+                                            </li>
+
+
+
+                                            <div class="anchor" id="search-61178cc6-e953-4da7-bb8c-f7132f8d74a6-1"
+                                                aria-hidden="true"></div>
+                                            <li>
+
+
+
+                                                Do the images include alt text?
+                                            </li>
+
+
+
+                                            <div class="anchor" id="search-61178cc6-e953-4da7-bb8c-f7132f8d74a6-2"
+                                                aria-hidden="true"></div>
+                                            <li>
+
+
+
+                                                Can all interactions be done via keyboard or touch?
+                                            </li>
+
+
+
+                                            <div class="anchor" id="search-61178cc6-e953-4da7-bb8c-f7132f8d74a6-3"
+                                                aria-hidden="true"></div>
+                                            <li>
+
+
+
+                                                Can users understand how to navigate and respond to error messages?
+                                            </li>
+
+                                        </ul>
+
+
+
+
+                                        <blockquote class="content-block"
+                                            id="search-eec7e79d-226c-4c06-988c-1b16ab6d8341">
+                                            <span class="icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" width="20"
+                                                    height="20" viewBox="0 0 24 24" stroke-width="2"
+                                                    stroke="currentColor" fill="none" stroke-linecap="round"
+                                                    stroke-linejoin="round">
+                                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                                    <path
+                                                        d="M10 11h-4a1 1 0 0 1 -1 -1v-3a1 1 0 0 1 1 -1h3a1 1 0 0 1 1 1v6c0 2.667 -1.333 4.333 -4 5">
+                                                    </path>
+                                                    <path
+                                                        d="M19 11h-4a1 1 0 0 1 -1 -1v-3a1 1 0 0 1 1 -1h3a1 1 0 0 1 1 1v6c0 2.667 -1.333 4.333 -4 5">
+                                                    </path>
+                                                </svg>
+                                            </span>
+
+
+
+
+
+
+
+
+
+
+
+                                            For a full list of checklist items, see the next chapter:&nbsp;<a
+                                                href="/en/foundations/accessibility/checklist/overview.html">Accessibility
+                                                Checklist</a>.
+                                        </blockquote>
+
+
+
+
+                                        <p>&nbsp;</p>
+
+
+
+
+                                        <div class="anchor" id="search-8893bc04-cd3d-44e3-a59a-8d0e85af8e68"
+                                            aria-hidden="true"></div>
+
+                                        <h2 class="heading heading--level-2"
+                                            id="section-accessibility-standards-we-follow-88">
+
+
+
+
+                                            Accessibility standards we follow
+                                            <a data-copy-url="true" title="Copy link to heading" class="copy-anchor"
+                                                href="#section-accessibility-standards-we-follow-88"><span
+                                                    class="css-pxzk9z" role="presentation"><svg
+                                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                                                        <path
+                                                            d="M16.971 3.029a4.367 4.367 0 0 0-6.175 0l-2.27 2.269 1.25 1.249 2.269-2.269a2.6 2.6 0 1 1 3.677 3.677l-2.269 2.269 1.25 1.25 2.268-2.27a4.367 4.367 0 0 0 0-6.175Z"
+                                                            fill="currentColor"></path>
+                                                        <path
+                                                            d="m13.526 7.798-1.324-1.324-5.728 5.728 1.324 1.324 5.728-5.728Z"
+                                                            fill="currentColor"></path>
+                                                        <path
+                                                            d="m6.547 9.776-1.25-1.25-2.268 2.27a4.367 4.367 0 1 0 6.175 6.175l2.27-2.269-1.25-1.249-2.269 2.269a2.6 2.6 0 1 1-3.677-3.677l2.269-2.269Z"
+                                                            fill="currentColor"></path>
+                                                    </svg></span></a>
+                                        </h2>
+
+
+
+
+
+                                        <p id="search-61c441b1-bfe2-4880-9d56-59bb7ab77ac4">
+
+
+
+                                            When designing and developing educational products, it is essential to
+                                            include specific accessibility features to meet U.S. legal requirements.
+                                            This ensures that all students, especially those with disabilities, can
+                                            fully participate in the learning experience.
+                                        </p>
+
+
+
+
+
+                                        <p id="search-61f027ef-9b92-4f6c-9011-143f51b1059f">
+
+
+
+                                            These requirements are not optional. They are mandated by the following
+                                            regulations:
+                                        </p>
+
+
+
+
+                                        <ul class="content-block">
+                                            <div class="anchor" id="search-a66dda26-150a-464a-996e-1641480a961f"
+                                                aria-hidden="true"></div>
+                                            <li>
+
+
+
+
+
+                                                <strong>ADA (Americans with Disabilities Act)</strong>: Requires that
+                                                digital content and tools are accessible to individuals with
+                                                disabilities, ensuring equal access to resources.
+                                            </li>
+
+
+
+                                            <div class="anchor" id="search-a66dda26-150a-464a-996e-1641480a961f-1"
+                                                aria-hidden="true"></div>
+                                            <li>
+
+
+
+
+
+                                                <strong>Section 504 (of the Rehabilitation Act)</strong>: Mandates that
+                                                all schools receiving federal funding provide reasonable accommodations
+                                                and support.
+                                            </li>
+
+
+
+                                            <div class="anchor" id="search-a66dda26-150a-464a-996e-1641480a961f-2"
+                                                aria-hidden="true"></div>
+                                            <li>
+
+
+
+
+
+                                                <strong>IDEA (Individuals with Disabilities Education Act)</strong>:
+                                                Ensures that students with disabilities receive appropriate education in
+                                                the least restrictive environment.
+                                            </li>
+
+
+
+                                            <div class="anchor" id="search-a66dda26-150a-464a-996e-1641480a961f-3"
+                                                aria-hidden="true"></div>
+                                            <li>
+
+
+
+
+
+
+
+
+
+                                                <strong>WCAG (Web Content Accessibility Guidelines)</strong>: Defines
+                                                accessibility standards for web and application
+                                                content.&nbsp;<strong>WCAG 2.1 AA</strong>&nbsp;is commonly considered
+                                                the minimum benchmark.
+                                            </li>
+
+                                        </ul>
+
+
+
+
+
+
+
+                                        <div class="content-block content-block--table data-table-wrapper">
+                                            <div>
+                                                <table class="data-table header-row" style="width:756px">
+
+                                                    <thead>
+                                                        <tr>
+
+
+
+                                                            <th class="left" style="width: 378px">
+
+
+
+                                                                <p id="search-a996850a-c6fa-4b13-bd02-721388fdaea0">
+
+
+
+                                                                    Standard
+                                                                </p>
+
+
+
+                                                            </th>
+
+
+                                                            <th class="left" style="width: 378px">
+
+
+
+                                                                <p id="search-f22859ef-c26d-47ec-ab54-d6b9529b2f4f">
+
+
+
+                                                                    Practical Application
+                                                                </p>
+
+
+
+                                                            </th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+
+
+                                                            <td class="left">
+
+
+
+                                                                <p id="search-b0ba00fa-aa24-49b6-aa81-0e1a4c55586f">
+
+
+
+                                                                    <strong>WCAG A+AA</strong>
+                                                                </p>
+
+
+
+                                                            </td>
+
+                                                            <td class="left">
+
+
+
+                                                                <p id="search-e1f373fe-770c-4afc-bb58-b81af78eb24c">
+
+
+
+                                                                    Ensure sufficient contrast, operability, clear
+                                                                    semantics and structure, and avoid relying solely on
+                                                                    color to convey information.
+                                                                </p>
+
+
+
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+
+
+                                                            <td class="left">
+
+
+
+                                                                <p id="search-9f58b048-afde-4554-b64e-a94d9eec9a69">
+
+
+
+                                                                    <strong>ADA／504／IDEA</strong>
+                                                                </p>
+
+
+
+                                                            </td>
+
+                                                            <td class="left">
+
+
+
+                                                                <p id="search-c3f4e775-ec3a-410e-ac45-7981d7055e85">
+
+
+
+                                                                    Especially relevant for educational platforms,
+                                                                    public sector services, and products or systems
+                                                                    funded by government programs.
+                                                                </p>
+
+
+
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+
+
+
+
+
+
+                                        <blockquote class="content-block"
+                                            id="search-079971da-5559-4cdf-b593-d7bf7c1688ad">
+                                            <span class="icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" width="20"
+                                                    height="20" viewBox="0 0 24 24" stroke-width="2"
+                                                    stroke="currentColor" fill="none" stroke-linecap="round"
+                                                    stroke-linejoin="round">
+                                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                                    <path
+                                                        d="M10 11h-4a1 1 0 0 1 -1 -1v-3a1 1 0 0 1 1 -1h3a1 1 0 0 1 1 1v6c0 2.667 -1.333 4.333 -4 5">
+                                                    </path>
+                                                    <path
+                                                        d="M19 11h-4a1 1 0 0 1 -1 -1v-3a1 1 0 0 1 1 -1h3a1 1 0 0 1 1 1v6c0 2.667 -1.333 4.333 -4 5">
+                                                    </path>
+                                                </svg>
+                                            </span>
+
+
+
+
+                                            If your product is used in educational or public service settings,
+                                            accessibility is a legal requirement and must be implemented and validated
+                                            according to relevant regulations.
+                                        </blockquote>
+
+
+
+
+                                        <p>&nbsp;</p>
+
+
+
+
+                                        <div class="anchor" id="search-c8b7e76d-03d6-4846-9748-cc8e52441ac7"
+                                            aria-hidden="true"></div>
+
+                                        <h2 class="heading heading--level-2"
+                                            id="section-how-we-validate-accessibility-design-c8">
+
+
+
+
+                                            How we validate accessibility design
+                                            <a data-copy-url="true" title="Copy link to heading" class="copy-anchor"
+                                                href="#section-how-we-validate-accessibility-design-c8"><span
+                                                    class="css-pxzk9z" role="presentation"><svg
+                                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                                                        <path
+                                                            d="M16.971 3.029a4.367 4.367 0 0 0-6.175 0l-2.27 2.269 1.25 1.249 2.269-2.269a2.6 2.6 0 1 1 3.677 3.677l-2.269 2.269 1.25 1.25 2.268-2.27a4.367 4.367 0 0 0 0-6.175Z"
+                                                            fill="currentColor"></path>
+                                                        <path
+                                                            d="m13.526 7.798-1.324-1.324-5.728 5.728 1.324 1.324 5.728-5.728Z"
+                                                            fill="currentColor"></path>
+                                                        <path
+                                                            d="m6.547 9.776-1.25-1.25-2.268 2.27a4.367 4.367 0 1 0 6.175 6.175l2.27-2.269-1.25-1.249-2.269 2.269a2.6 2.6 0 1 1-3.677-3.677l2.269-2.269Z"
+                                                            fill="currentColor"></path>
+                                                    </svg></span></a>
+                                        </h2>
+
+
+
+
+
+                                        <p id="search-b8f51549-9c4b-4039-9ab7-3137ca5046f5">
+
+
+
+                                            You don’t need to memorize all accessibility standards during the design and
+                                            development process. However, you should be familiar with basic checklist
+                                            items and testing methods and plan room for validation.
+                                        </p>
+
+
+
+
+                                        <div class="anchor" id="search-d10ecb27-9f26-48c3-b6c8-1cb74bbaa780"
+                                            aria-hidden="true"></div>
+
+                                        <h3 class="heading heading--level-3"
+                                            id="section-recommended-validation-steps--d1">
+
+
+
+
+                                            <strong>Recommended validation steps:</strong>
+                                            <a data-copy-url="true" title="Copy link to heading" class="copy-anchor"
+                                                href="#section-recommended-validation-steps--d1"><span
+                                                    class="css-pxzk9z" role="presentation"><svg
+                                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                                                        <path
+                                                            d="M16.971 3.029a4.367 4.367 0 0 0-6.175 0l-2.27 2.269 1.25 1.249 2.269-2.269a2.6 2.6 0 1 1 3.677 3.677l-2.269 2.269 1.25 1.25 2.268-2.27a4.367 4.367 0 0 0 0-6.175Z"
+                                                            fill="currentColor"></path>
+                                                        <path
+                                                            d="m13.526 7.798-1.324-1.324-5.728 5.728 1.324 1.324 5.728-5.728Z"
+                                                            fill="currentColor"></path>
+                                                        <path
+                                                            d="m6.547 9.776-1.25-1.25-2.268 2.27a4.367 4.367 0 1 0 6.175 6.175l2.27-2.269-1.25-1.249-2.269 2.269a2.6 2.6 0 1 1-3.677-3.677l2.269-2.269Z"
+                                                            fill="currentColor"></path>
+                                                    </svg></span></a>
+                                        </h3>
+
+
+
+
+                                        <div class="anchor" id="search-a9810f18-a7de-4752-972a-76e178734c1f"
+                                            aria-hidden="true"></div>
+
+                                        <h5 class="heading heading--level-5" id="section-design-system-level-a9">
+
+
+
+
+                                            Design system level
+                                            <a data-copy-url="true" title="Copy link to heading" class="copy-anchor"
+                                                href="#section-design-system-level-a9"><span class="css-pxzk9z"
+                                                    role="presentation"><svg xmlns="http://www.w3.org/2000/svg"
+                                                        viewBox="0 0 20 20">
+                                                        <path
+                                                            d="M16.971 3.029a4.367 4.367 0 0 0-6.175 0l-2.27 2.269 1.25 1.249 2.269-2.269a2.6 2.6 0 1 1 3.677 3.677l-2.269 2.269 1.25 1.25 2.268-2.27a4.367 4.367 0 0 0 0-6.175Z"
+                                                            fill="currentColor"></path>
+                                                        <path
+                                                            d="m13.526 7.798-1.324-1.324-5.728 5.728 1.324 1.324 5.728-5.728Z"
+                                                            fill="currentColor"></path>
+                                                        <path
+                                                            d="m6.547 9.776-1.25-1.25-2.268 2.27a4.367 4.367 0 1 0 6.175 6.175l2.27-2.269-1.25-1.249-2.269 2.269a2.6 2.6 0 1 1-3.677-3.677l2.269-2.269Z"
+                                                            fill="currentColor"></path>
+                                                    </svg></span></a>
+                                        </h5>
+
+
+
+
+
+                                        <p id="search-7607b7b3-3270-465b-883e-307096e8c2cb">
+
+
+
+                                            Used when planning or maintaining a design system:
+                                        </p>
+
+
+
+
+                                        <ul class="content-block">
+                                            <div class="anchor" id="search-1e5fe1fa-85ef-4ec9-a834-96d2cf643643"
+                                                aria-hidden="true"></div>
+                                            <li>
+
+
+
+
+
+
+
+                                                Ensure that all <strong>Color Tokens</strong> meet the recommended
+                                                contrast ratio between text and background.
+                                            </li>
+
+
+
+                                            <div class="anchor" id="search-1e5fe1fa-85ef-4ec9-a834-96d2cf643643-1"
+                                                aria-hidden="true"></div>
+                                            <li>
+
+
+
+
+
+
+
+                                                Text size should support optimal readability. <strong>Body text is
+                                                    recommended to be no smaller than 16px</strong>, or adjusted
+                                                according to platform or device.
+                                            </li>
+
+
+
+                                            <div class="anchor" id="search-1e5fe1fa-85ef-4ec9-a834-96d2cf643643-2"
+                                                aria-hidden="true"></div>
+                                            <li>
+
+
+
+                                                Make sure that components using Alias Tokens have passed color and text
+                                                contrast testing.
+                                            </li>
+
+
+
+                                            <div class="anchor" id="search-1e5fe1fa-85ef-4ec9-a834-96d2cf643643-3"
+                                                aria-hidden="true"></div>
+                                            <li>
+
+
+
+
+
+
+
+                                                All interactive elements (e.g., Buttons, Checkboxes) should have
+                                                <strong>sufficient tap or click area</strong>, with a minimum of 44px ×
+                                                44px unless otherwise specified.
+                                            </li>
+
+
+
+                                            <div class="anchor" id="search-1e5fe1fa-85ef-4ec9-a834-96d2cf643643-4"
+                                                aria-hidden="true"></div>
+                                            <li>
+
+
+
+
+
+
+
+
+
+
+
+                                                Every component should have a <strong>focus style</strong>, with an
+                                                outline contrast ratio of at least <strong>3:1</strong>, to support
+                                                keyboard navigation and users with high contrast needs.
+                                            </li>
+
+                                        </ul>
+
+
+
+
+                                        <blockquote class="content-block"
+                                            id="search-f2aed262-b127-4239-982f-30b503536620">
+                                            <span class="icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" width="20"
+                                                    height="20" viewBox="0 0 24 24" stroke-width="2"
+                                                    stroke="currentColor" fill="none" stroke-linecap="round"
+                                                    stroke-linejoin="round">
+                                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                                    <path
+                                                        d="M10 11h-4a1 1 0 0 1 -1 -1v-3a1 1 0 0 1 1 -1h3a1 1 0 0 1 1 1v6c0 2.667 -1.333 4.333 -4 5">
+                                                    </path>
+                                                    <path
+                                                        d="M19 11h-4a1 1 0 0 1 -1 -1v-3a1 1 0 0 1 1 -1h3a1 1 0 0 1 1 1v6c0 2.667 -1.333 4.333 -4 5">
+                                                    </path>
+                                                </svg>
+                                            </span>
+
+
+
+
+
+
+                                            <strong>Tips: Recommendations for sizes and units</strong><br>All
+                                            dimension-related values (e.g., 16px, 44px) are based on CSS pixels (CSS
+                                            px).<br>For iOS or Android development, convert these units to pt or dp.
+                                        </blockquote>
+
+
+
+
+                                        <p>&nbsp;</p>
+
+
+
+
+                                        <div class="anchor" id="search-acfbf06a-2858-405d-95b1-f5295375fbb4"
+                                            aria-hidden="true"></div>
+
+                                        <h5 class="heading heading--level-5" id="section-ui-mockup-level-ac">
+
+
+
+
+                                            UI mockup level
+                                            <a data-copy-url="true" title="Copy link to heading" class="copy-anchor"
+                                                href="#section-ui-mockup-level-ac"><span class="css-pxzk9z"
+                                                    role="presentation"><svg xmlns="http://www.w3.org/2000/svg"
+                                                        viewBox="0 0 20 20">
+                                                        <path
+                                                            d="M16.971 3.029a4.367 4.367 0 0 0-6.175 0l-2.27 2.269 1.25 1.249 2.269-2.269a2.6 2.6 0 1 1 3.677 3.677l-2.269 2.269 1.25 1.25 2.268-2.27a4.367 4.367 0 0 0 0-6.175Z"
+                                                            fill="currentColor"></path>
+                                                        <path
+                                                            d="m13.526 7.798-1.324-1.324-5.728 5.728 1.324 1.324 5.728-5.728Z"
+                                                            fill="currentColor"></path>
+                                                        <path
+                                                            d="m6.547 9.776-1.25-1.25-2.268 2.27a4.367 4.367 0 1 0 6.175 6.175l2.27-2.269-1.25-1.249-2.269 2.269a2.6 2.6 0 1 1-3.677-3.677l2.269-2.269Z"
+                                                            fill="currentColor"></path>
+                                                    </svg></span></a>
+                                        </h5>
+
+
+
+
+
+                                        <p id="search-9b578081-e823-4d1d-a7c7-c4ddc4c044a2">
+
+
+
+                                            Used for checking UI mockups before handoff:
+                                        </p>
+
+
+
+
+                                        <ul class="content-block">
+                                            <div class="anchor" id="search-44c70566-191a-4fd7-8fc7-59508b8104b3"
+                                                aria-hidden="true"></div>
+                                            <li>
+
+
+
+                                                Ensure components are clearly arranged with adequate spacing and line
+                                                height for readability.
+                                            </li>
+
+
+
+                                            <div class="anchor" id="search-44c70566-191a-4fd7-8fc7-59508b8104b3-1"
+                                                aria-hidden="true"></div>
+                                            <li>
+
+
+
+                                                Avoid relying solely on color or icons (e.g., red warning symbols);
+                                                include supporting text explanations.
+                                            </li>
+
+
+
+                                            <div class="anchor" id="search-44c70566-191a-4fd7-8fc7-59508b8104b3-2"
+                                                aria-hidden="true"></div>
+                                            <li>
+
+
+
+
+
+
+
+
+
+
+
+                                                Error messages should <strong>clearly state the cause</strong> and
+                                                <strong>how to resolve it</strong> (e.g., "Please enter a valid email
+                                                address").
+                                            </li>
+
+                                        </ul>
+
+
+
+                                        <p>&nbsp;</p>
+
+
+
+
+                                        <div class="anchor" id="search-bfc7cbd0-6541-4c04-9458-5366371dd3ba"
+                                            aria-hidden="true"></div>
+
+                                        <h5 class="heading heading--level-5"
+                                            id="section-accessibility-validation-support-documents-bf">
+
+
+
+
+                                            Accessibility validation support documents
+                                            <a data-copy-url="true" title="Copy link to heading" class="copy-anchor"
+                                                href="#section-accessibility-validation-support-documents-bf"><span
+                                                    class="css-pxzk9z" role="presentation"><svg
+                                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                                                        <path
+                                                            d="M16.971 3.029a4.367 4.367 0 0 0-6.175 0l-2.27 2.269 1.25 1.249 2.269-2.269a2.6 2.6 0 1 1 3.677 3.677l-2.269 2.269 1.25 1.25 2.268-2.27a4.367 4.367 0 0 0 0-6.175Z"
+                                                            fill="currentColor"></path>
+                                                        <path
+                                                            d="m13.526 7.798-1.324-1.324-5.728 5.728 1.324 1.324 5.728-5.728Z"
+                                                            fill="currentColor"></path>
+                                                        <path
+                                                            d="m6.547 9.776-1.25-1.25-2.268 2.27a4.367 4.367 0 1 0 6.175 6.175l2.27-2.269-1.25-1.249-2.269 2.269a2.6 2.6 0 1 1-3.677-3.677l2.269-2.269Z"
+                                                            fill="currentColor"></path>
+                                                    </svg></span></a>
+                                        </h5>
+
+
+
+
+
+                                        <p id="search-2589a741-5229-49d6-b9fc-757f2a8f7b1d">
+
+
+
+                                            Used when preparing for accessibility validation, compliance checks, or
+                                            syncing with the development team:
+                                        </p>
+
+
+
+
+                                        <ul class="content-block">
+                                            <div class="anchor" id="search-7fc5b1b7-158f-4d47-aa89-b91a93ac7bc3"
+                                                aria-hidden="true"></div>
+                                            <li>
+
+
+
+
+
+
+
+                                                Provide annotated <strong>focus order</strong> (aligned with WCAG’s
+                                                "Operable" principle), recommending a sequence that follows natural
+                                                screen reader logic.
+                                            </li>
+
+
+
+                                            <div class="anchor" id="search-7fc5b1b7-158f-4d47-aa89-b91a93ac7bc3-1"
+                                                aria-hidden="true"></div>
+                                            <li>
+
+
+
+
+
+
+
+
+
+
+
+                                                Offer suggested <strong>screen reader labels</strong>, indicating which
+                                                elements require <mark>aria-label</mark> or descriptive text.
+                                            </li>
+
+                                        </ul>
+
+
+
+                                        <p>&nbsp;</p>
+
+
+
+
+                                        <div class="anchor" id="search-d7cfe41b-e860-45fe-9c98-1ebcb4f34f61"
+                                            aria-hidden="true"></div>
+
+                                        <h3 class="heading heading--level-3"
+                                            id="section-common-accessibility-testing-tools--d7">
+
+
+
+
+                                            <strong>Common accessibility testing tools:</strong>
+                                            <a data-copy-url="true" title="Copy link to heading" class="copy-anchor"
+                                                href="#section-common-accessibility-testing-tools--d7"><span
+                                                    class="css-pxzk9z" role="presentation"><svg
+                                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                                                        <path
+                                                            d="M16.971 3.029a4.367 4.367 0 0 0-6.175 0l-2.27 2.269 1.25 1.249 2.269-2.269a2.6 2.6 0 1 1 3.677 3.677l-2.269 2.269 1.25 1.25 2.268-2.27a4.367 4.367 0 0 0 0-6.175Z"
+                                                            fill="currentColor"></path>
+                                                        <path
+                                                            d="m13.526 7.798-1.324-1.324-5.728 5.728 1.324 1.324 5.728-5.728Z"
+                                                            fill="currentColor"></path>
+                                                        <path
+                                                            d="m6.547 9.776-1.25-1.25-2.268 2.27a4.367 4.367 0 1 0 6.175 6.175l2.27-2.269-1.25-1.249-2.269 2.269a2.6 2.6 0 1 1-3.677-3.677l2.269-2.269Z"
+                                                            fill="currentColor"></path>
+                                                    </svg></span></a>
+                                        </h3>
+
+
+
+
+                                        <ul class="content-block">
+                                            <div class="anchor" id="search-0811f475-badc-406a-ac44-d8aa04e63f47"
+                                                aria-hidden="true"></div>
+                                            <li>
+
+
+
+
+
+
+
+
+                                                <strong><a
+                                                        href="https://www.figma.com/community/plugin/732603254453395948/stark-contrast-accessibility-checker"
+                                                        target="_blank">Stark</a></strong><strong> </strong>(Figma
+                                                Plugin): Checks color contrast and text legibility in design files.
+                                            </li>
+
+
+
+                                            <div class="anchor" id="search-0811f475-badc-406a-ac44-d8aa04e63f47-1"
+                                                aria-hidden="true"></div>
+                                            <li>
+
+
+
+
+
+
+
+
+                                                <a href="https://www.figma.com/community/plugin/731310036968334777/a11y-focus-order"
+                                                    target="_blank"><strong>A11y - Focus Order</strong></a><strong>
+                                                </strong>(Figma Plugin): Helps annotate and review focus order in
+                                                interactive flows.
+                                            </li>
+
+
+
+                                            <div class="anchor" id="search-0811f475-badc-406a-ac44-d8aa04e63f47-2"
+                                                aria-hidden="true"></div>
+                                            <li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                <a href="https://support.apple.com/guide/voiceover/welcome/mac"
+                                                    target="_blank"><strong>VoiceOver</strong></a><strong>
+                                                </strong>(macOS) <strong>/ </strong><a href="https://www.nvaccess.org/"
+                                                    target="_blank"><strong>NVDA</strong></a><strong>
+                                                </strong>(Windows): Simulates real screen reader experiences.
+                                                Recommended to test alongside accessibility annotations.
+                                            </li>
+
+
+
+                                            <div class="anchor" id="search-0811f475-badc-406a-ac44-d8aa04e63f47-3"
+                                                aria-hidden="true"></div>
+                                            <li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                <a href="https://www.deque.com/axe/"
+                                                    target="_blank"><strong>Axe</strong></a> ／ <a
+                                                    href="https://wave.webaim.org/"
+                                                    target="_blank"><strong>WAVE</strong></a> ／ <a
+                                                    href="https://developer.chrome.com/docs/lighthouse/"
+                                                    target="_blank"><strong>Lighthouse</strong></a>: Performs
+                                                comprehensive audits of developed pages, covering structure,
+                                                operability, and color contrast.
+                                            </li>
+
+
+
+                                            <div class="anchor" id="search-0811f475-badc-406a-ac44-d8aa04e63f47-4"
+                                                aria-hidden="true"></div>
+                                            <li>
+
+
+
+
+
+
+                                                <a href="https://www.itic.org/policy/accessibility/vpat"
+                                                    target="_blank"><strong>VPAT Template</strong></a>: Helps track and
+                                                document compliance with common accessibility standards, especially for
+                                                large-scale projects or handoffs.
+                                            </li>
+
+                                        </ul>
+
+
+
+                                        <p>&nbsp;</p>
+
+
+
+
+
+
+                                        <hr class="divider">
+
+
+
+
+                                        <div class="anchor" id="search-c4713458-1772-462c-b3c4-ddea4ed7e457"
+                                            aria-hidden="true"></div>
+
+                                        <h3 class="heading heading--level-3" id="section-sources-c4">
+
+
+
+
+                                            Sources
+                                            <a data-copy-url="true" title="Copy link to heading" class="copy-anchor"
+                                                href="#section-sources-c4"><span class="css-pxzk9z"
+                                                    role="presentation"><svg xmlns="http://www.w3.org/2000/svg"
+                                                        viewBox="0 0 20 20">
+                                                        <path
+                                                            d="M16.971 3.029a4.367 4.367 0 0 0-6.175 0l-2.27 2.269 1.25 1.249 2.269-2.269a2.6 2.6 0 1 1 3.677 3.677l-2.269 2.269 1.25 1.25 2.268-2.27a4.367 4.367 0 0 0 0-6.175Z"
+                                                            fill="currentColor"></path>
+                                                        <path
+                                                            d="m13.526 7.798-1.324-1.324-5.728 5.728 1.324 1.324 5.728-5.728Z"
+                                                            fill="currentColor"></path>
+                                                        <path
+                                                            d="m6.547 9.776-1.25-1.25-2.268 2.27a4.367 4.367 0 1 0 6.175 6.175l2.27-2.269-1.25-1.249-2.269 2.269a2.6 2.6 0 1 1-3.677-3.677l2.269-2.269Z"
+                                                            fill="currentColor"></path>
+                                                    </svg></span></a>
+                                        </h3>
+
+
+
+
+                                        <ul class="content-block">
+                                            <div class="anchor" id="search-7dd88128-8f7e-4c82-9154-ee6a6d0f7da8"
+                                                aria-hidden="true"></div>
+                                            <li>
+
+
+
+
+
+
+
+
+                                                <a href="https://www.w3.org/WAI/fundamentals/accessibility-principles/"
+                                                    target="_blank">W3C/WAI – Accessibility Principles</a>: <i>Design
+                                                    guidelines and fundamental principles of accessibility, including
+                                                    considerations for color vision deficiency.</i>
+                                            </li>
+
+
+
+                                            <div class="anchor" id="search-7dd88128-8f7e-4c82-9154-ee6a6d0f7da8-1"
+                                                aria-hidden="true"></div>
+                                            <li>
+
+
+
+
+
+
+
+
+                                                <a href="https://www.who.int/news-room/fact-sheets/detail/blindness-and-visual-impairment"
+                                                    target="_blank">WHO – Vision Impairment and Blindness</a>: <i>Global
+                                                    distribution of vision impairment and data showing over 1 billion
+                                                    untreated cases.</i>
+                                            </li>
+
+
+
+                                            <div class="anchor" id="search-7dd88128-8f7e-4c82-9154-ee6a6d0f7da8-2"
+                                                aria-hidden="true"></div>
+                                            <li>
+
+
+
+
+
+
+
+
+                                                <a href="https://www.who.int/news-room/fact-sheets/detail/deafness-and-hearing-loss"
+                                                    target="_blank">WHO – Deafness and Hearing Loss</a>: <i>Statistics
+                                                    on global hearing loss, including impact analysis on 34 million
+                                                    children.</i>
+                                            </li>
+
+
+
+                                            <div class="anchor" id="search-7dd88128-8f7e-4c82-9154-ee6a6d0f7da8-3"
+                                                aria-hidden="true"></div>
+                                            <li>
+
+
+
+
+
+
+
+
+                                                <a href="https://dyslexiaida.org/dyslexia-basics/"
+                                                    target="_blank">International Dyslexia Association</a>:
+                                                <i>Introduction to dyslexia and language-based learning disabilities,
+                                                    with teaching strategies.</i>
+                                            </li>
+
+
+
+                                            <div class="anchor" id="search-7dd88128-8f7e-4c82-9154-ee6a6d0f7da8-4"
+                                                aria-hidden="true"></div>
+                                            <li>
+
+
+
+
+
+
+
+
+                                                <a href="https://www.unesco.org/en/articles/every-learner-matters-disability-inclusion-and-gender-equality-education"
+                                                    target="_blank">UNESCO – Inclusive Education</a>: <i>Policy
+                                                    framework and practical guidelines on advancing inclusive education
+                                                    globally.</i>
+                                            </li>
+
+                                        </ul>
+
+
+
+
+                                        <div class="page-bottom-navigation row">
+                                            <div class="col left">
+                                                <a class="segment"
+                                                    href="/en/get-started/get-started.html">
+                                                    <div class="arrow">
+
+                                                        <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                                                            width="20" height="20" viewBox="0 0 24 24" stroke-width="2"
+                                                            stroke="currentColor" fill="none" stroke-linecap="round"
+                                                            stroke-linejoin="round">
+                                                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                                                            <line x1="5" y1="12" x2="11" y2="18"></line>
+                                                            <line x1="5" y1="12" x2="11" y2="6"></line>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="segment-text">
+                                                        <div class="section">Get started</div>
+                                                        <div class="pagename">Get started</div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="col right">
+                                                <a href="/en/foundations/accessibility/checklist/overview.html"
+                                                    class="segment">
+                                                    <div class="segment-text">
+                                                        <div class="section">Checklist</div>
+                                                        <div class="pagename">Overview</div>
+                                                    </div>
+                                                    <div class="arrow">
+
+                                                        <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+                                                            width="20" height="20" viewBox="0 0 24 24" stroke-width="2"
+                                                            stroke="currentColor" fill="none" stroke-linecap="round"
+                                                            stroke-linejoin="round">
+                                                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                                                            <line x1="13" y1="18" x2="19" y2="12"></line>
+                                                            <line x1="13" y1="6" x2="19" y2="12"></line>
+                                                        </svg>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+
+                                <div id="content-nav-container">
+                                    <nav id="content-nav">
+                                        <span class="content-nav-header">On this page</span>
+                                        <ul>
+                                            <li class="active"><a
+                                                    href="#section-starting-from-accessibility-a4">Starting from
+                                                    Accessibility</a></li>
+                                            <li class=""><a href="#section-what-is-accessibility-20">What is
+                                                    Accessibility?</a></li>
+                                            <li class="sub"><a
+                                                    href="#section-common-aspects-of-accessibility-design--6b">Common
+                                                    Aspects of Accessibility Design:</a></li>
+                                            <li class=""><a
+                                                    href="#section-design-with-accessibility-in-mind-from-the-start-96">Design
+                                                    with accessibility in mind from the start</a></li>
+                                            <li class="sub"><a href="#section-begin-with-some-simple-checks--90">Begin
+                                                    with some simple checks:</a></li>
+                                            <li class=""><a
+                                                    href="#section-accessibility-standards-we-follow-88">Accessibility
+                                                    standards we follow</a></li>
+                                            <li class=""><a href="#section-how-we-validate-accessibility-design-c8">How
+                                                    we validate accessibility design</a></li>
+                                            <li class="sub"><a
+                                                    href="#section-recommended-validation-steps--d1">Recommended
+                                                    validation steps:</a></li>
+                                            <li class="sub"><a
+                                                    href="#section-common-accessibility-testing-tools--d7">Common
+                                                    accessibility testing tools:</a></li>
+                                            <li class="sub"><a href="#section-sources-c4">Sources</a></li>
+                                        </ul>
+
+                                    </nav>
+                                </div>
+                            </div>
+
+
+
+                            <div class="container-footer small" "="">
+                    <div class=" slider">
+                                <p class="text-muted">© 2026 ViewSonic Design System. Page last updated on Oct 16, 2025,
+                                    10:38 <!--<a href="/zh-tw/get-started/get-started.html"
+                                        target="_blank">Foundation Site <b>zhTW</b></a>--></p>
+                            </div>
+                    </div>
+                    </main>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+    <!-- .site end -->
+
+    <!-- JavaScript -->
+
+
+    <script src="./accessibility_files/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="./accessibility_files/hotkeys.min.js"
+        integrity="sha512-0DDQV6AZNigMxQY3XxpqiEZO1bMT/zBgKtM3fhB3Yh4TGduw2HuFcJ7BSS96Ki1Am7gOY3RyRaE5cvdTsngRhw=="
+        crossorigin="anonymous"></script>
+
+    <!-- Bootstrap -->
+    <script src="./accessibility_files/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+
+    <!-- Prism -->
+    <script src="./accessibility_files/prism.min.js"
+        integrity="sha512-axJX7DJduStuBB8ePC8ryGzacZPr3rdLaIDZitiEgWWk2gsXxEFlm4UW0iNzj2h3wp5mOylgHAzBzM4nRSvTZA=="
+        crossorigin="anonymous"></script>
+    <script src="./accessibility_files/prism-autoloader.min.js"
+        integrity="sha512-xCfKr8zIONbip3Q1XG/u5x40hoJ0/DtP1bxyMEi0GWzUFoUffE+Dfw1Br8j55RRt9qG7bGKsh+4tSb1CvFHPSA=="
+        crossorigin="anonymous"></script>
+    <script src="./accessibility_files/prism-normalize-whitespace.min.js"
+        integrity="sha512-kkot4E7n1RXhUCh8s9gRT04qHrnqR9muvEX/Cj38JPGhQF1jZ4BXfhggGYp9GrxV8J/2EJnCHYeWfKIdmWmaMw=="
+        crossorigin="anonymous"></script>
+    <script src="./accessibility_files/prism-toolbar.min.js"
+        integrity="sha512-YrvgEHAi5/3o2OT+/vh1z19oJXk/Kk0qdVKbjEFl9VRmcLTaWRYzVziZCvoGpJ2TrnV7rB8pnJcz1ioVJjgw2A=="
+        crossorigin="anonymous"></script>
+    <script src="./accessibility_files/prism-copy-to-clipboard.min.js"
+        integrity="sha512-pUNGXbOrc+Y3dm5z2ZN7JYQ/2Tq0jppMDOUsN4sQHVJ9AUQpaeERCUfYYBAnaRB9r8d4gtPKMWICNhm3tRr4Fg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Live sandbox -->
+    <script src="./accessibility_files/sandbox_v13.js"></script>
+
+    <!-- Search Support-->
+    <script src="./accessibility_files/fuse.js@6.5.3"
+        integrity="sha512-W+QdO2uEYG8oKLFGKPGGwT43RQWOBzAcxSpPMRyR6zAC3DLjMPp6GxoPvasKfs1pbYYXd0ByDCOiBd7M554qbw=="
+        crossorigin="anonymous"></script>
+    <script src="./accessibility_files/si.js"></script>
+
+    <!-- General scripts -->
+    <script src="./accessibility_files/docs.min.js"></script>
+    <script src="./accessibility_files/functionality.js"></script>
+    <script src="./accessibility_files/cookie-consent.js"></script>
+
+    <!-- After loading -->
+    <script>
+        $(document).ready(function () {
+            // Load versions
+            const versionUrl = "/latest/../versions.json"
+            loadVersions(versionUrl)
+
+            // Load sandboxes, if any
+            const sandboxConfigUrl = "/latest/../sandbox.json"
+            loadSandboxes(sandboxConfigUrl)
+
+
+            $("input[data-toggle='list-search']").on("keyup", function () {
+                searchInList($(this), $(this).attr("data-list-id"));
+            });
+
+        })
+    </script>
+
+
+
+
+
+
+
+</body>
+
+</html>
